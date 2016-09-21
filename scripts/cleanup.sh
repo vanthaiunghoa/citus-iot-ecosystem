@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Are you sure you want to destroy this device?"
 select yn in "Yes" "No"; do
     case $yn in

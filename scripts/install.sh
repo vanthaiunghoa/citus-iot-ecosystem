@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Updating OS software packages..."
 sudo apt update
 sudo apt full-upgrade
