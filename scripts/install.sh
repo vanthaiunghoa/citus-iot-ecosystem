@@ -4,6 +4,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;34m'
 NC='\033[1;30m' # No Color
+DEF='\033[0m' # Default Color
 
 echo -e "${GREEN}INFO: Updating OS software packages...${NC}"
 sudo apt update
@@ -17,3 +18,4 @@ cd $HOME; rm -rf $HOME/citus-iot-device-agents/
 mkdir -p $HOME/.agent/
 echo "${DEVICE_ID}" >> ${HOME}/.agent/.device-id
 echo "${SECRET_KEY}" >> ${HOME}/.agent/.secret-key
+echo -e "${DEF}"
