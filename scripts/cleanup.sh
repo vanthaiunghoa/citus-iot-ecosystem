@@ -4,6 +4,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;34m'
 NC='\033[1;30m' # No Color
+DEF='\033[0m' # Default Color
 
 echo -e "${RED}DANGEROUS: Are you sure you want to destroy this device?${NC}"
 select yn in "Yes" "No"; do
@@ -14,7 +15,9 @@ select yn in "Yes" "No"; do
 			echo -e "${BLUE}INFO: Removing device certificates and agents...${NC}" 
 			sudo citus-device remove
 			echo -e "${BLUE}INFO: Cleanup device successfully!${NC}" 
+			echo -e "${DEF}"
 			break;;
         No ) exit;;
     esac
 done
+echo -e "${DEF}"
