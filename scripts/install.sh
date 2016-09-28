@@ -19,6 +19,12 @@ else
 	sudo yum install git python curl -y
 fi
 
+if [ "${INSTALL_DOCKER}" == "YES" ]; then
+	echo -e "${BLUE}INFO: Installing docker engine...${NC}"
+	curl -sSL https://get.docker.com | sh
+	echo -e "${YELLOW}$(docker -v)${NC}"
+fi
+
 echo -e "${GREEN}INFO: Installing Software Agents...${NC}"
 git clone https://github.com/cuongquay/citus-iot-device-agents.git $HOME/citus-iot-device-agents/
 cd $HOME/citus-iot-device-agents/
