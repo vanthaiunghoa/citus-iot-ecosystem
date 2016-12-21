@@ -6,7 +6,7 @@ services:
      - citus-application-gateway
      - citus-iot-ecosystem-website
     environment:
-     - FPT_APPLICATION_WEBSITE=http://citus-iot-ecosystem-website:8080
+     - FPT_APPLICATION_WEBSITE=http://citus-iot-ecosystem-website:1880
      - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000    
     ports:
      - 80:80
