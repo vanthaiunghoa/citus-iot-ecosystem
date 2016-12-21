@@ -1,0 +1,84 @@
+version: '2'
+services:  
+  citus-application-proxy:
+    image: cuongdd1/citus-iot-ecosystem-website:nginx
+    depends_on:     
+     - citus-application-gateway
+     - citus-iot-ecosystem-website
+    environment:
+     - FPT_APPLICATION_WEBSITE=http://citus-iot-ecosystem-website:8080
+     - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000    
+    ports:
+     - 80:80
+     - 443:443
+    restart: always
+  citus-iot-ecosystem-website:
+    image: cuongdd1/citus-iot-ecosystem-website:demo
+    depends_on:
+     - device-lifecycle-service
+     - citus-application-gateway
+     - sensor-remote-dashboard
+    environment:
+     - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+     - AWS_IOT_CERT_BUCKET=${AWS_IOT_CERT_BUCKET}
+     - FPT_APPLICATION_GATEWAY_ADMIN=http://citus-application-gateway:8001
+     - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000
+     - FPT_DEVICE_MANAGEMENT_SERVICE=http://device-lifecycle-service:3000
+    ports:
+     - 8080:1880
+    restart: always  
+  citus-application-gateway:
+    image: cuongdd1/citus-application-gateway
+    depends_on:
+     - cassandra-database
+    environment:
+     - KONG_DATABASE=cassandra
+     - KONG_CASSANDRA_CONTACT_POINTS=cassandra-database
+     - KONG_PG_HOST=cassandra-database
+    ports:
+     - 8000:8000
+     - 8001:8001
+    restart: always
+  cassandra-database:
+    image: cassandra:2.2
+    ports:
+     - 9042:9042
+    restart: always
+  sensor-remote-dashboard:
+    image: cuongdd1/sensor-remote-dashboard
+    depends_on:
+     - device-lifecycle-service
+     - citus-elasticsearch-svc
+    environment:
+     - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+     - ELASTIC_SEARCH_SERVICE=http://citus-elasticsearch-svc:9200/telemetry/sensors/_search
+     - DEVICE_LIFECYCLE_SERVICE=http://device-lifecycle-service:3000
+    ports:
+     - 3128:1880
+    restart: always
+  device-lifecycle-service:
+    image: cuongdd1/device-lifecycle-service
+    environment:
+     - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    ports:
+     - 3000:3000
+    restart: always
+  citus-elasticsearch-svc:
+    image: cuongdd1/elasticsearch-logstash-dynamodb-streams
+    environment:
+     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    ports:
+     - 9200:9200
+    restart: always
+  citus-sensor-simulator:
+    image: cuongdd1/seniot-gateway:citus-sensor-simulator
+    ports:
+     - 8088:1880
+    restart: always
