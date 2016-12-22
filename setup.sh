@@ -5,7 +5,7 @@ AMAZON_AMI="Amazon Linux AMI"
 CENTOS_AMI="CentOS Linux"
 
 if [ -z "${OS_RELEASE##*$AMAZON_AMI*}" ]; then
-	yum install docker-engine -y
+	yum install docker -y
 	chkconfig --add docker
 	chkconfig docker on
 	service docker start
