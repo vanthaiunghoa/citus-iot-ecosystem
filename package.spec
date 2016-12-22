@@ -11,7 +11,7 @@ Source0: citus-iot-ecosystem-%{version}.tar.gz
 BuildArch: noarch
 
 %description
-A citus-iot-ecosystem bundle.
+A citus-iot-ecosystem (prototype) bundle.
 
 %prep
 %setup
