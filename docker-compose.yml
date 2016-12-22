@@ -77,8 +77,8 @@ services:
     ports:
      - 9200:9200
     restart: always
-  citus-sensor-simulator:
-    image: cuongdd1/seniot-gateway:citus-sensor-simulator
+  citus-sensor-analytics:
+    image: cuongdd1/citus-sensor-analytics
     ports:
      - 8088:1880
     restart: always
