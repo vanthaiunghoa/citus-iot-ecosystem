@@ -1,7 +1,10 @@
 #!/bin/bash
-set -e -x 
+set -e -x
+OS_RELEASE=$(cat /etc/os-release)
+AMAZON_AMI="Amazon Linux AMI"
+CENTOS_AMI="CentOS Linux"
 
-if [ `cat /etc/os-release | grep -q "Amazon Linux AMI"` ]; then
+if [ -z "${OS_RELEASE##*$AMAZON_AMI*}" ]; then
 	yum install docker-engine -y
 	chkconfig --add docker
 	chkconfig docker on
