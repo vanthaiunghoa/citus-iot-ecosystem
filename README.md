@@ -54,7 +54,7 @@ Technologies
 Deployments
 ===========
 
-**Local Deployment**
+**Development Environment**
 
 1. Install Docker Engine and Docker Componse following this link https://docs.docker.com/compose/install/.
 2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run "$ eval '$(docker-machine env default)'" in your PC terminal.
@@ -76,7 +76,7 @@ Deployments
 8. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
 9. To terminate the system, run this shell command "$ docker-compose down"
 
-**AWS Cloud Formation**
+**AWS Cloud Formation Stack**
 
 ```json
 {
