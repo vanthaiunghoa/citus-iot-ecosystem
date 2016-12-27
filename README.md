@@ -7,7 +7,7 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/cuongquay/citus-iot-ecosystem-website.svg?maxAge=2592000)]()
 
-![Citus IoT](https://raw.githubusercontent.com/cuongquay/citus-iot-device-agents/master/docs/images/citus-iot-ecosystem.png)
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-system-architecture.png)
 
 Features
 ========
@@ -26,6 +26,9 @@ Features
 5. A real time dashboard uses to display, monitor and control IoT devices.
 - Sensor Remote Dashboard
 - Citus Sensor Analytics
+
+
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
 
 Deployments
 ===========
