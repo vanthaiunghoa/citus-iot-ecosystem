@@ -400,7 +400,27 @@ You need to change these parameters before applying the AWS CloudFormation templ
 5. YOUR-VPC-SUBNET-ID
 6. YOUR-VPC-ID
 
-Decode the Base64 UseData to change the AWS Credentials for yout AWS IoT Hub then encode it again
+Update your AWS Credentials for your AWS IoT Hub, encode into Base64 format 
+
+```shell
+#!/bin/bash
+set -e -x 
+
+export AWS_DEFAULT_REGION=ap-northeast-1
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export AWS_IOT_CERT_BUCKET=
+
+yum update -y
+yum install git -y
+
+git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git /usr/share/citus-iot-ecosystem
+cd /usr/share/citus-iot-ecosystem
+chmod +x setup.sh
+./setup.sh
+```
+
+And replace the **Base64UserData.Default** value in the Cloud Formation template above.
 
 ```json
 "Base64UserData": {
