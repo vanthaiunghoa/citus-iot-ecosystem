@@ -27,8 +27,21 @@ Features
  + Sensor Remote Dashboard
  + Citus Sensor Analytics
 
-
 ![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
+
+Technologies
+============
+ + AWS Cloud Computing Services
+ + AWS IoT (Hub, Rule Engine, ThingShadow)
+ + DynamoDB/Streamming
+ + ElasticSearch/LogStash
+ + Docker/DockerHub
+ + Docker-Compose
+ + Kubernetes
+ + Node-RED
+ + NodeJS 
+ + AngularJS
+ + D3JS
 
 Deployments
 ===========
