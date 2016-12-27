@@ -56,7 +56,9 @@ Deployments
 
 **Prerequisites**
 
-1. Setup [DynamoDB](DYNAMODB.md) with Stream Enabled
+1. Create AWS IAM User and manage [Access Key](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
+2. Setup [DynamoDB](DYNAMODB.md) with [Stream Enabled](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsConsole_DynamoDB.html)
+
 
 **Development Environment**
 
