@@ -23,11 +23,11 @@ Features
  + Device Provisioning/Registration/Management
  + Device Software Update (OTA)
 4. A set of data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
- + Sensor Anomaly Detection
- + Plate Recognition/Face Detection
+ + Citus Sensor Analytics
+ + Plate Recognition (3rd Party)
+ + Face Detection (3rd Party)
 5. A real time dashboard uses to display, monitor and control IoT devices.
  + Sensor Remote Dashboard
- + Citus Sensor Analytics
 
 ![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
 
