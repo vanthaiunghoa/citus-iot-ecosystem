@@ -7,14 +7,14 @@ Description
 ===========
 Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through the Citus™ IoT Platform.
 
-| No. | Docker Hub Images  | Pulls  |
-|---|---|---|
-| 1 | citus-iot-ecosystem-website | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() |
-| 2 | citus-application-gateway | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() |
-| 3 | device-lifecycle-service | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() |
-| 4 | citus-elasticsearch-svc | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() |
-| 5 | sensor-remote-dashboard | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() |
-| 6 | citus-sensor-analytics | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() |
+| No. | Docker Hub Images  | Pulls  | Stars | Automated |
+|---|---|---|---|---|
+| 1 | citus-iot-ecosystem-website | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | (https://img.shields.io/docker/stars/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000) | |
+| 2 | citus-application-gateway | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | | |
+| 3 | device-lifecycle-service | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | | |
+| 4 | citus-elasticsearch-svc | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | | |
+| 5 | sensor-remote-dashboard | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | | |
+| 6 | citus-sensor-analytics | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | | |
 
 
 
