@@ -32,13 +32,14 @@ Features
 Technologies
 ============
  + AWS Cloud Computing Services (EC2, Route53, EIP, CloudFormation)
- + AWS IoT (Hub, Registry, Rule Engine, ThingShadow)
- + Kong API Gateway
+ + AWS IoT (Hub, Registry, Rule Engine, ThingShadow) 
  + DynamoDB/Streamming
  + ElasticSearch/Logstash
+ + Kong API Gateway
  + Docker/DockerHub
  + Docker-Compose
  + Kubernetes
+ + Cassandra
  + Node-RED
  + NodeJS 
  + AngularJS
@@ -54,8 +55,9 @@ Deployments
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
 4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git** or download the zipped package and extract to a folder.
 5. Start deploying by running this shell command "$ cd citus-iot-ecosystem && docker-compose up -d --force-recreate"
-6. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
-7. To terminate the system, run this shell command "$ docker-compose down"
+6. Wait for cluster is initialied and stable. It takes about 5 minutes to initialize Cassandra Database and API Gateway. 
+7. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
+8. To terminate the system, run this shell command "$ docker-compose down"
 
 **AWS Cloud Formation**
 
