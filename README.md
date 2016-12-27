@@ -34,7 +34,7 @@ Features
 
 Technologies
 ============
- + AWS Cloud Computing Services (EC2, Route53, EIP, CloudFormation)
+ + AWS Cloud Computing Basic Services (EC2, Route53, EIP, IAM, S3)
  + AWS IoT (Hub, Registry, Rule Engine, ThingShadow) 
  + DynamoDB/Streamming
  + ElasticSearch/Logstash
