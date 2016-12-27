@@ -54,7 +54,7 @@ Technologies
 Deployments
 ===========
 
-**Prerequisite**
+**Prerequisites**
 
 1. Setup [DynamoDB](citus-iot-ecosystem-bootstrap/tree/master/DYNAMODB.md)
 
