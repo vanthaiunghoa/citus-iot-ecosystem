@@ -10,6 +10,7 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 | Docker Hub Images  | Pulls  |
 |---|---|
 | citus-iot-ecosystem-website | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() |
+| citus-application-gateway | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() |
 | device-lifecycle-service | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() |
 | citus-elasticsearch-svc | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() |
 | sensor-remote-dashboard | [![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() |
