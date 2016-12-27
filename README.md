@@ -60,7 +60,7 @@ Deployments
 2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run "$ eval '$(docker-machine env default)'" in your PC terminal.
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
 4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git** or download the zipped package and extract to a folder.
-5. Setup the shell environment variables
+5. Setup the shell environment variables which will be used by *docker-compose.yaml*
 
 	```javascript
 	export AWS_DEFAULT_REGION=ap-northeast-1
