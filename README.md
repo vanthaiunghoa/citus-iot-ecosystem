@@ -28,7 +28,7 @@ Features
  + Publish or consume a Docker-based application
  + Continuous Delivery Support w/ Web Hook
 3. A device lifecycle management service and device security process that enhance the device provisioning and communication security of the AWS IoT as well as providing Over The Air software update feature of IoT devices.
- + Device Provisioning/Registration/Management
+ + Device Provisioning/Activation/Management
  + Device Software Update (OTA)
 4. A set of data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
  + Statistical Anomaly Detection
