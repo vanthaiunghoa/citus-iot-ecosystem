@@ -400,4 +400,15 @@ You need to change these parameters before applying the AWS CloudFormation templ
 5. YOUR-VPC-SUBNET-ID
 6. YOUR-VPC-ID
 
+Decode the Base64 UseData to change the AWS Credentials for yout AWS IoT Hub then encode it again
+
+```json
+"Base64UserData": {
+	"Type": "String",
+	"Default": "IyEvYmluL2Jhc2gNCnNldCAtZSAteCANCg0KZXhwb3J0IEFXU19ERUZBVUxUX1JFR0lPTj1hcC1ub3J0aGVhc3QtMQ0KZXhwb3J0IEFXU19BQ0NFU1NfS0VZX0lEPQ0KZXhwb3J0IEFXU19TRUNSRVRfQUNDRVNTX0tFWT0NCmV4cG9ydCBBV1NfSU9UX0NFUlRfQlVDS0VUPQ0KDQp5dW0gdXBkYXRlIC15DQp5dW0gaW5zdGFsbCBnaXQgLXkNCg0KZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9jdW9uZ3F1YXkvY2l0dXMtaW90LWVjb3N5c3RlbS1ib290c3RyYXAuZ2l0IC91c3Ivc2hhcmUvY2l0dXMtaW90LWVjb3N5c3RlbQ0KY2QgL3Vzci9zaGFyZS9jaXR1cy1pb3QtZWNvc3lzdGVtDQpjaG1vZCAreCBzZXR1cC5zaA0KLi9zZXR1cC5zaA=="
+}
+```
+
+You need to setup a corrected IoT environment with AWS IoT Policy, AWS IoT Rule, AWS DynamoDB with Stream Enabled.
+
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="cuongquay"><a class="LI-simple-link" href='https://vn.linkedin.com/in/cuongquay?trk=profile-badge'>DUONG Dinh Cuong</a></div>
