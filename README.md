@@ -56,7 +56,7 @@ Deployments
 
 **Prerequisites**
 
-1. Setup [DynamoDB](DYNAMODB.md)
+1. Setup [DynamoDB](DYNAMODB.md) with Stream Enabled
 
 **Development Environment**
 

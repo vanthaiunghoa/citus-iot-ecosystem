@@ -1,11 +1,11 @@
 # Setup AWS DynamoDB for Citus™ IoT Ecosystem
 
-Database name			your-dynamodb-table-name
-Table name				telemetry-sensors
-Primary partition key	topic (String)
-Primary sort key		epoch (Number)
-Stream enabled			Yes
-View type				New and old images
+1. Database name			your-dynamodb-table-name
+2. Table name				telemetry-sensors
+3. Primary partition key	topic (String)
+4. Primary sort key		epoch (Number)
+5. Stream enabled			Yes
+6. View type				New and old images
 
 Author
 ======
