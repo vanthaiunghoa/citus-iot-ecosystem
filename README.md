@@ -423,7 +423,7 @@ You need to change these parameters before applying the AWS CloudFormation templ
 5. YOUR-VPC-SUBNET-ID
 6. YOUR-VPC-ID
 
-Update your AWS Credentials for your AWS IoT Hub, encode into Base64 format 
+Update your AWS Credentials for your AWS IoT Hub by encoding the script below into into Base64 format 
 
 ```shell
 #!/bin/bash
