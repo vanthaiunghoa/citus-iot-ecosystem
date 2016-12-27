@@ -85,7 +85,11 @@ Deployments
 	
 7. Wait for cluster is initialied and stable. It takes about 5 minutes to initialize Cassandra Database and API Gateway. 
 8. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
-9. To terminate the system, run this shell command "$ docker-compose down"
+9. To terminate the system, run this shell command 
+
+	```javascript
+	$ docker-compose down
+	```
 
 **AWS Cloud Formation Stack**
 
