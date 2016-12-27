@@ -57,8 +57,30 @@ Deployments
 **Prerequisites**
 
 1. Create AWS IAM User and manage [Access Key](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
-2. Setup [DynamoDB](DYNAMODB.md) with [Stream Enabled](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsConsole_DynamoDB.html)
+2. Setup [DynamoDB Table](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html) with [Stream Enabled](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsConsole_DynamoDB.html)
+	+ Database name			your-dynamodb-table-name
+	+ Table name			telemetry-sensors
+	+ Primary partition 	key	topic (String)
+	+ Primary sort key		epoch (Number)
+	+ Stream enabled		Yes
+	+ View type				New and old images
+	
+3. Create [AWS IoT Policy](http://docs.aws.amazon.com/iot/latest/developerguide/create-iot-policy.html) and named as *your-iot-thing-policy-name*
 
+	```json
+	{
+	  "Version": "2012-10-17",
+	  "Statement": [
+	    {
+	      "Effect": "Allow",
+	      "Action": "iot:*",
+	      "Resource": "*"
+	    }
+	  ]
+	}
+	```
+	
+4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
 
 **Development Environment**
 
