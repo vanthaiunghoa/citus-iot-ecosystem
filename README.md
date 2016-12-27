@@ -429,6 +429,6 @@ Replace the **Base64UserData.Default** with the encoded value in the Cloud Forma
 }
 ```
 
-You need to setup a corrected IoT environment with AWS IoT Policy, AWS IoT Rule, AWS DynamoDB with Stream Enabled to use with this platform. For more information, please contact us!
+You need to setup a corrected IoT environment with AWS IoT Policy, AWS IoT Rule, AWS DynamoDB with Stream Enabled to use with this platform. For more information, please contact us by email: cuongdd1@fsoft.com.vn!
 
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="cuongquay"><a class="LI-simple-link" href='https://vn.linkedin.com/in/cuongquay?trk=profile-badge'>DUONG Dinh Cuong</a></div>
