@@ -54,9 +54,9 @@ Technologies
 Deployments
 ===========
 
-**Prerequisites**
+**AWS Environment Prerequisites**
 
-Supported Region: ap-northeast-1
+(Supported Region: *ap-northeast-1*)
 
 1. Create [AWS IAM User](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) and manage [Access Key](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
 2. Setup [DynamoDB Table](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html) with [Stream Enabled](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsConsole_DynamoDB.html)
