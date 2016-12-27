@@ -27,7 +27,7 @@ Features
 2. A container-based application engine is designed for Microservices architecture which is easily to deploy on Docker-Compose, Docker Swarm or Kubernetes.
  + Publish or consume a Docker-based application
  + Continuous Delivery Support w/ Web Hook
-3. A device lifecycle management service and device security process that enhance the device provisioning and communication security of the AWS IoT as well as provising Over The Air software update feature of IoT devices.
+3. A device lifecycle management service and device security process that enhance the device provisioning and communication security of the AWS IoT as well as providing Over The Air software update feature of IoT devices.
  + Device Provisioning/Registration/Management
  + Device Software Update (OTA)
 4. A set of data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
