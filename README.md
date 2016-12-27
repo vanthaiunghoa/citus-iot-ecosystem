@@ -44,6 +44,7 @@ Technologies
  + NodeJS 
  + AngularJS
  + D3JS
+ + Nginx
 
 Deployments
 ===========
