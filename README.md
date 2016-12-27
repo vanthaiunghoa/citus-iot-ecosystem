@@ -85,7 +85,7 @@ Deployments
 4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
 5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name*
 
-**Development Environment**
+**Setup Development Environment**
 
 1. Install Docker Engine and Docker Componse following this link https://docs.docker.com/compose/install/.
 2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run 
@@ -122,7 +122,7 @@ Deployments
 	$ docker-compose down
 	```
 
-**AWS Cloud Formation Stack**
+**Run on AWS Cloud Formation Stack**
 
 ```json
 {
