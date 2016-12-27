@@ -5,7 +5,7 @@ Description
 ===========
 Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through the Citus™ IoT Platform.
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/cuongquay/citus-iot-ecosystem-website.svg?maxAge=2592000)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]()
 
 ![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-system-architecture.png)
 
