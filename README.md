@@ -1,5 +1,5 @@
 # citus-iot-ecosystem
-This repository contains the Citus™ IoT Ecosystem bootstrap code which is used to provision an IoT Platform in Citus™ IoT Ecosystem.
+This repository contains the Citus™ IoT Ecosystem bootstrap code which is used to provision an IoT Platform in Citus™ IoT Ecosystem using Docker Compose or AWS CloudFormation.
 
 Description
 ===========
