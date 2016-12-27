@@ -5,7 +5,7 @@ This repository contains the Citus™ IoT Ecosystem bootstrap code which is used
 
 Description
 ===========
-Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through the Citus™ IoT Platform.
+Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through the Citus™ IoT Platform. It supports dedicated infrastructure as well as shared infrastructure deployment model.
 
 | No. | Component  | Pulls  | Stars | Size |
 |---|---|---|---|---|
