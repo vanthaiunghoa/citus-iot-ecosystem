@@ -60,10 +60,21 @@ Deployments
 2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run "$ eval '$(docker-machine env default)'" in your PC terminal.
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
 4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git** or download the zipped package and extract to a folder.
-5. Start deploying by running this shell command "$ cd citus-iot-ecosystem && docker-compose up -d --force-recreate"
-6. Wait for cluster is initialied and stable. It takes about 5 minutes to initialize Cassandra Database and API Gateway. 
-7. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
-8. To terminate the system, run this shell command "$ docker-compose down"
+5. Setup the shell environment variables
+
+```javascript
+export AWS_DEFAULT_REGION=ap-northeast-1
+export AWS_ACCESS_KEY_ID=your-s3-iot-hub-access-key-id
+export AWS_SECRET_ACCESS_KEY=your-s3-iot-hub-secret-key
+export AWS_IOT_CERT_BUCKET=your-s3-certificate-bucket-name
+export AWS_IOT_DEVICE_POLICY=your-iot-thing-policy-name
+export AWS_DYN_TABLE_NAME=your-dynamodb-table-name
+```
+
+6. Start deploying by running this shell command "$ cd citus-iot-ecosystem && docker-compose up -d --force-recreate"
+7. Wait for cluster is initialied and stable. It takes about 5 minutes to initialize Cassandra Database and API Gateway. 
+8. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
+9. To terminate the system, run this shell command "$ docker-compose down"
 
 **AWS Cloud Formation**
 
