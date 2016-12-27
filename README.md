@@ -50,7 +50,7 @@ Deployments
 **Local Deployment**
 
 1. Install Docker Engine and Docker Componse following this link https://docs.docker.com/compose/install/.
-2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run "$ eval '$(docker-machine env default)'" in your terminal.
+2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run "$ eval '$(docker-machine env default)'" in your PC terminal.
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
 4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git** or download the zipped package and extract to a folder.
 5. Start deploying by running this shell command "$ cd citus-iot-ecosystem && docker-compose up -d --force-recreate"
