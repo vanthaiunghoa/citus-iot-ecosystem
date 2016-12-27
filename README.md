@@ -9,7 +9,7 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 | No. | Docker Hub Images  | Pulls  | Stars | Automated | Size |
 |---|---|---|---|---|---|
-| 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Automated](https://img.shields.io/docker/automated/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Size](https://img.shields.io/imagelayers/image-size/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() |
+| 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Automated](https://img.shields.io/docker/automated/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Size](https://img.shields.io/imagelayers/image-size/cuongdd1/citus-iot-ecosystem-website/latest.svg?maxAge=2592000)]() |
 | 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | | | |
 | 3 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | | | |
 | 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | | | |
