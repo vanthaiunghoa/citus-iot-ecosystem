@@ -12,20 +12,20 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 Features
 ========
 1. A Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer.
-- User Groups/Roles Management using Auth0 (https://auth0.com)
-- Secured application access by API Gateway through Key Authentication
+ + User Groups/Roles Management using Auth0 (https://auth0.com)
+ + Secured application access by API Gateway through Key Authentication
 2. A container-based application engine is designed for Microservices architecture which is built on top of Kubernetes Google Container Platform.
-- Publish or consume a Docker-based application
-- Continuous Delivery Support w/ Web Hook
+ + Publish or consume a Docker-based application
+ + Continuous Delivery Support w/ Web Hook
 3. A device lifecycle management process which cover device provisioning and communication security and maintain the OTA software of IoT devices.
-- Device Provisioning/Registration/Management
-- Device Software Update (OTA)
+ + Device Provisioning/Registration/Management
+ + Device Software Update (OTA)
 4. A set of data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
-- Sensor Anomaly Detection
-- Plate Recognition/Face Detection
+ + Sensor Anomaly Detection
+ + Plate Recognition/Face Detection
 5. A real time dashboard uses to display, monitor and control IoT devices.
-- Sensor Remote Dashboard
-- Citus Sensor Analytics
+ + Sensor Remote Dashboard
+ + Citus Sensor Analytics
 
 
 ![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
