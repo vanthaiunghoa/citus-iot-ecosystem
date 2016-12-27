@@ -54,6 +54,10 @@ Technologies
 Deployments
 ===========
 
+**Prerequisite**
+
+1. Setup [DynamoDB](citus-iot-ecosystem-bootstrap/tree/master/DYNAMODB.md)
+
 **Development Environment**
 
 1. Install Docker Engine and Docker Componse following this link https://docs.docker.com/compose/install/.
@@ -73,7 +77,7 @@ Deployments
 	export AWS_SECRET_ACCESS_KEY=your-s3-iot-hub-secret-key
 	export AWS_IOT_CERT_BUCKET=your-s3-certificate-bucket-name
 	export AWS_IOT_DEVICE_POLICY=your-iot-thing-policy-name
-	export AWS_DYN_TABLE_NAME=[your-dynamodb-table-name](citus-iot-ecosystem-bootstrap/tree/master/DYNAMODB.md)
+	export AWS_DYN_TABLE_NAME=[your-dynamodb-table-name]
 	```
 	
 6. Start deploying by running this shell command 
