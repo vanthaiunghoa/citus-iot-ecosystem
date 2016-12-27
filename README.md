@@ -85,6 +85,11 @@ Deployments
 4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
 5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name*
 
+**Kubenetes Environment Prerequisites**
+
+1. Setup [Container Cluster](https://coreos.com/kubernetes/docs/latest/kubernetes-on-aws.html)
+2. Configure this cluster to use for Citus™ IoT Ecosystem (TBD)  
+
 **Setup Development Environment**
 
 1. Install Docker Engine and Docker Componse following this link https://docs.docker.com/compose/install/.
