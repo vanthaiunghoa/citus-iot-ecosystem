@@ -15,7 +15,7 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 | 4 | cuongdd1/citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | [![Automated](https://img.shields.io/docker/automated/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]()|
 | 5 | cuongdd1/sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | [![Automated](https://img.shields.io/docker/automated/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]()|
 | 6 | cuongdd1/citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | [![Automated](https://img.shields.io/docker/automated/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]()|
-
+| 7 | cuongdd1/seniot-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![Automated](https://img.shields.io/docker/automated/cuongdd1/seniot-gateway.svg?maxAge=2592000)]()|
 
 
 ![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-system-architecture.png)
