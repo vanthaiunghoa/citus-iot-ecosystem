@@ -1,6 +1,8 @@
 # citus-iot-ecosystem
 This repository contains the Citus™ IoT Ecosystem bootstrap code which is used to provision an IoT Platform in Citus™ IoT Ecosystem using Docker Compose or AWS CloudFormation.
 
+Powered By ![FPT Software](https://apps.citus.io/images/logo.png =100x20)
+
 Description
 ===========
 Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through the Citus™ IoT Platform.
