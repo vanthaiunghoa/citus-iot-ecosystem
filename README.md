@@ -430,9 +430,11 @@ Update your AWS Credentials for your AWS IoT Hub by encoding the script below in
 set -e -x 
 
 export AWS_DEFAULT_REGION=ap-northeast-1
-export AWS_ACCESS_KEY_ID=
-export AWS_SECRET_ACCESS_KEY=
-export AWS_IOT_CERT_BUCKET=
+export AWS_ACCESS_KEY_ID=your-s3-iot-hub-access-key-id
+export AWS_SECRET_ACCESS_KEY=your-s3-iot-hub-secret-key
+export AWS_IOT_CERT_BUCKET=your-s3-certificate-bucket-name
+export AWS_IOT_DEVICE_POLICY=your-iot-thing-policy-name
+export AWS_DYN_TABLE_NAME=your-dynamodb-table-name
 
 yum update -y
 yum install git -y
