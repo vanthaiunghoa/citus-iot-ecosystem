@@ -60,7 +60,7 @@ Deployments
 2. On Windows or Mac OSX Operating System: Launch Kitematic to start docker machine then run 
 	
 	```javascript
-	$ eval '$(docker-machine env default)'
+	$ eval "$(docker-machine env default)"
 	```
 	
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
