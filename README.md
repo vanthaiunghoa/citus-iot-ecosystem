@@ -51,10 +51,9 @@ Technologies
  + Python
  + Bash Shell
 
-Deployments
-===========
-
-**AWS Environment Prerequisites**
+Prerequisites
+=============
+**AWS Environment**
 
 (Supported Region: *ap-northeast-1*)
 
@@ -85,10 +84,13 @@ Deployments
 4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
 5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name*
 
-**Kubenetes Environment Prerequisites**
+**Kubenetes Environment**
 
 1. Setup [Container Cluster](https://coreos.com/kubernetes/docs/latest/kubernetes-on-aws.html)
 2. Configure this cluster to use for Citus™ IoT Ecosystem (TBD)  
+
+Deployments
+===========
 
 **Setup Development Environment**
 
