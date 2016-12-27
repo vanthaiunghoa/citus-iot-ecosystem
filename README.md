@@ -45,6 +45,8 @@ Technologies
  + AngularJS
  + D3JS
  + Nginx
+ + Python
+ + Bash Shell
 
 Deployments
 ===========
