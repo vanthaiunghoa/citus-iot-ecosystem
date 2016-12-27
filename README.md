@@ -56,7 +56,9 @@ Deployments
 
 **Prerequisites**
 
-1. Create AWS IAM User and manage [Access Key](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
+Supported Region: ap-northeast-1
+
+1. Create [AWS IAM User](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) and manage [Access Key](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
 2. Setup [DynamoDB Table](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html) with [Stream Enabled](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsConsole_DynamoDB.html)
 	+ Database name			your-dynamodb-table-name
 	+ Table name			telemetry-sensors
@@ -81,6 +83,7 @@ Deployments
 	```
 	
 4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
+5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name*
 
 **Development Environment**
 
