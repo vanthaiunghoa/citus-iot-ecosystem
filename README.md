@@ -71,7 +71,11 @@ Deployments
 	export AWS_DYN_TABLE_NAME=your-dynamodb-table-name
 	```
 
-6. Start deploying by running this shell command "$ cd citus-iot-ecosystem-bootstrap && docker-compose up -d --force-recreate"
+6. Start deploying by running this shell command 
+	```javascript
+	$ cd citus-iot-ecosystem-bootstrap
+	$ docker-compose up -d --force-recreate
+	```
 7. Wait for cluster is initialied and stable. It takes about 5 minutes to initialize Cassandra Database and API Gateway. 
 8. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
 9. To terminate the system, run this shell command "$ docker-compose down"
