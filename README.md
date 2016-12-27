@@ -73,7 +73,7 @@ Deployments
 	export AWS_SECRET_ACCESS_KEY=your-s3-iot-hub-secret-key
 	export AWS_IOT_CERT_BUCKET=your-s3-certificate-bucket-name
 	export AWS_IOT_DEVICE_POLICY=your-iot-thing-policy-name
-	export AWS_DYN_TABLE_NAME=your-dynamodb-table-name
+	export AWS_DYN_TABLE_NAME=[your-dynamodb-table-name](DYNAMODB.md)
 	```
 	
 6. Start deploying by running this shell command 
