@@ -86,7 +86,7 @@ Prerequisites
 
 **Kubenetes Environment**
 
-1. Setup [Container Cluster](https://coreos.com/kubernetes/docs/latest/kubernetes-on-aws.html)
+1. Setup [Container Cluster on AWS using CoreOS](https://coreos.com/kubernetes/docs/latest/kubernetes-on-aws.html)
 2. Configure this cluster to use for Citus™ IoT Ecosystem (TBD)  
 
 Deployments
