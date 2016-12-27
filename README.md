@@ -92,7 +92,7 @@ Prerequisites
 4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
 5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name*
 6. Launch a VPC with (YOUR-VPC-ID) and at least one public subnet (YOUR-VPC-SUBNET-ID)
-7. Create a [Hosted Domain](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) with YOUR-ROUTE53-DOMAIN-NAME and retrive your YOUR-ROUTE53-HOSTED-ZONE-ID
+7. Create a [Hosted Domain](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) with YOUR-ROUTE53-DOMAIN-NAME and retrieve YOUR-ROUTE53-HOSTED-ZONE-ID
 
 **II. Kubenetes Environment**
 
