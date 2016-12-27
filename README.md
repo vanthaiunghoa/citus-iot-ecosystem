@@ -24,7 +24,7 @@ Features
 1. A Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer or tenant user. *This feature is still in reviewing for multi-tenant security concern using kubernetes.*
  + User Groups/Roles Management using Auth0 (https://auth0.com)
  + Secured application access by API Gateway through Key Authentication
-2. A container-based application engine is designed for Microservices architecture which is built on top of Kubernetes Google Container Platform.
+2. A container-based application engine is designed for Microservices architecture which is easily to deploy on Docker-Compose, Docker Swarm or Kubernetes.
  + Publish or consume a Docker-based application
  + Continuous Delivery Support w/ Web Hook
 3. A device lifecycle management process which cover device provisioning and communication security and maintain the OTA software of IoT devices.
