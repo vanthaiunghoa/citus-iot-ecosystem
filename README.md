@@ -132,8 +132,8 @@ Deployments
 	```
 	
 7. Wait for cluster is initialied and stable. It takes about 5 minutes to pull docker images and initialize states. 
-8. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
-9. To terminate the system, run this shell command 
+8. Access to the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
+9. Terminate the system by running this shell command 
 
 	```javascript
 	$ docker-compose down
