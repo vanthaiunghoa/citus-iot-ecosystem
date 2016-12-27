@@ -24,17 +24,17 @@ Features
 1. A Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer or tenant user. *This feature is still in reviewing for multi-tenant security concern using kubernetes.*
  + User Groups/Roles Management using Auth0 (https://auth0.com)
  + Secured application access by API Gateway through Key Authentication
-2. A container-based application engine is designed for Microservices architecture which is easily to deploy on Docker-Compose, Docker Swarm or Kubernetes.
+2. Container-based application engine is designed for Microservices architecture which is easily to deploy on Docker-Compose, Docker Swarm or Kubernetes.
  + Publish or consume a Docker-based application
  + Continuous Delivery Support w/ Web Hook
-3. A device lifecycle management service and device security process that enhance the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
+3. Device lifecycle management service and device security process that enhance the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
  + Device Provisioning/Activation/Management
  + Device Software Update (OTA)
-4. A set of data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
+4. Data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
  + Statistical Anomaly Detection
  + Plate Recognition (3rd Party)
  + Face Detection (3rd Party)
-5. A real time dashboard uses to display, monitor and control IoT devices.
+5. Real time dashboard uses to display, monitor and control IoT devices.
  + Sensor Remote Dashboard
  + Citus Sensor Analytics
 
