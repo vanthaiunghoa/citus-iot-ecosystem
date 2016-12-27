@@ -420,7 +420,7 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-And replace the **Base64UserData.Default** value in the Cloud Formation template above.
+Replace the **Base64UserData.Default** with the encoded value in the Cloud Formation template above.
 
 ```json
 "Base64UserData": {
