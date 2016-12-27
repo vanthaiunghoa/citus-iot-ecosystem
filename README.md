@@ -34,7 +34,7 @@ Technologies
  + AWS Cloud Computing Services (EC2, Route53, EIP, CloudFormation)
  + AWS IoT (Hub, Registry, Rule Engine, ThingShadow)
  + DynamoDB/Streamming
- + ElasticSearch/LogStash
+ + ElasticSearch/Logstash
  + Docker/DockerHub
  + Docker-Compose
  + Kubernetes
