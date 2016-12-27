@@ -54,7 +54,8 @@ Deployments
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
 4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git** or download the zipped package and extract to a folder.
 5. Start deploying by running this shell command "$ cd citus-iot-ecosystem && docker-compose up -d --force-recreate"
-6. To terminate the system, run this shell command "$ docker-compose down"
+6. Accessing the Web Portal at http://192.168.99.100/ on Windows/Mac OSX or http://127.0.0.1 on Ubuntu/RHEL/CentOS.
+7. To terminate the system, run this shell command "$ docker-compose down"
 
 **AWS Cloud Formation**
 
