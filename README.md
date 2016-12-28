@@ -1,7 +1,7 @@
 # Citus™ IoT Ecosystem
 This repository contains the Citus™ IoT Ecosystem bootstrap code which is used to provision an IoT Platform in Citus™ IoT Ecosystem using Docker Compose and AWS CloudFormation on AWS.
 
-<img src="https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/fpt-software-logo.png" width="150" height="120" />
+<img src="https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/fpt-software-logo.png" width="150" height="120" />
 
 Description
 ===========
@@ -17,7 +17,7 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 | 6 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-sensor-analytics.svg)](https:/microbadger.com/images/cuongdd1/citus-sensor-analytics)|
 | 7 | seniot-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/seniot-gateway.svg)](https:/microbadger.com/images/cuongdd1/seniot-gateway)|
 
-![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-system-architecture.png)
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-system-architecture.png)
 
 Features
 ========
@@ -38,7 +38,7 @@ Features
  + Sensor Remote Dashboard
  + Citus Sensor Analytics
 
-![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem-bootstrap/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
 
 Technologies
 ============
@@ -112,7 +112,7 @@ Deployments
 	```
 	
 3. On Ubuntu/RHEL/CentOS: execute shell command "$ docker-compose --version" to make sure it's running.
-4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem-bootstrap.git** or download the zipped package and extract to a folder.
+4. Checkout this repository **git clone https://github.com/cuongquay/citus-iot-ecosystem.git** or download the zipped package and extract to a folder.
 5. Setup the shell environment variables which will be used by *docker-compose.yaml*
 	
 	```javascript
