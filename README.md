@@ -11,15 +11,15 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 ---
 
-| No. | Micro-services  | Pulls  | Stars | Size |
-|---|---|---|---|---|
-| 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-iot-ecosystem-website.svg)](https:/microbadger.com/images/cuongdd1/citus-iot-ecosystem-website) |
-| 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-iot-web-portal.svg)](https:/microbadger.com/images/cuongdd1/citus-iot-web-portal)|
-| 3 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-application-gateway.svg)](https:/microbadger.com/images/cuongdd1/citus-application-gateway)|
-| 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | |
-| 5 | sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/sensor-remote-dashboard.svg)](https:/microbadger.com/images/cuongdd1/sensor-remote-dashboard)|
-| 6 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() ||
-| 7 | seniot-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![Stars](https://img.shields.io/docker/stars/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/seniot-gateway.svg)](https:/microbadger.com/images/cuongdd1/seniot-gateway)|
+| No. | Micro-services  | Pulls  | Size |
+|---|---|---|---|
+| 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-iot-ecosystem-website.svg)](https:/microbadger.com/images/cuongdd1/citus-iot-ecosystem-website) |
+| 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-iot-web-portal.svg)](https:/microbadger.com/images/cuongdd1/citus-iot-web-portal)|
+| 3 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-application-gateway.svg)](https:/microbadger.com/images/cuongdd1/citus-application-gateway)|
+| 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | |
+| 5 | sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/sensor-remote-dashboard.svg)](https:/microbadger.com/images/cuongdd1/sensor-remote-dashboard)|
+| 6 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | |
+| 7 | seniot-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/seniot-gateway.svg)](https:/microbadger.com/images/cuongdd1/seniot-gateway)|
 
 ---
 
@@ -29,11 +29,15 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 Features
 ========
+**Web Portal**
+
 GUI Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer or tenant user. *This feature is still in reviewing for multi-tenant security concern using kubernetes.*
  + User Groups/Roles Management using Auth0 (https://auth0.com)
  + Secured application access by API Gateway through Key Authentication
 
 ---
+
+**Application Platform**
 
 Container-based application engine is designed for Microservices architecture which is easily to deploy on Docker-Compose, Docker Swarm or Kubernetes.
  + Publish or consume a Docker-based application
@@ -41,11 +45,15 @@ Container-based application engine is designed for Microservices architecture wh
 
 ---
 
-Device lifecycle management service and device security process that enhance the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
+**Manage Your Device**
+
+Device lifecycle management service and device security process that help you enhancing the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
  + Device Provisioning/Activation/Management
  + Device Software Update (OTA)
 
 ---
+
+**Analytics**
 
 Data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
  + Statistical Anomaly Detection
@@ -54,7 +62,9 @@ Data analytics services that allow user consuming their IoT telemetry data into 
 
 ---
 
-Real time dashboard uses to display, monitor and control IoT devices.
+**Monitoring & Control**
+
+A set of featured Real-time Dashboards which is used to display, monitor and control your IoT devices directly using Web Portal.
  + Sensor Remote Dashboard
  + Citus Sensor Analytics
 
@@ -66,14 +76,15 @@ Real time dashboard uses to display, monitor and control IoT devices.
 
 Technologies
 ============
- + AWS Cloud Computing Basic Services (EC2, Route53, EIP, IAM, S3)
+ + AWS Cloud Computing Basic Services (VPC, EC2, Route53, Elastic IP, IAM, S3)
  + AWS IoT (Hub, Registry, Rule Engine, ThingShadow) 
  + DynamoDB/Streamming
  + ElasticSearch/Logstash
  + Kong API Gateway
  + Docker/DockerHub
  + Docker-Compose
-
+ + Docker Swarm
+ 
 ---
 
  + Kubernetes
@@ -92,7 +103,7 @@ Prerequisites
 =============
 **I. AWS Environment**
 
-(Supported Region: *ap-northeast-1*)
+(Supported Region: *ap-northeast-1* as default if using template)
 
 1. Create [AWS IAM User](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) and manage [Access Key](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
 2. Setup [DynamoDB Table](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html) with [Stream Enabled](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsConsole_DynamoDB.html)
@@ -100,15 +111,15 @@ Prerequisites
 	| Property | Value |
     |---|---|
 	| Database name | your-dynamodb-table-name |
-	| Table name | telemetry-sensors |
-	| Primary partition | key	topic (String) |
+	| Table name | telemetry-sensors (default) |
+	| Primary partition key | topic (String) |
 	| Primary sort key | epoch (Number) |
-	| Stream enabled | Yes |
+	| Stream enabled | Yes (used for citus-elasticsearch-svc) |
 	| View type | New and old images |
 	
 ---
 
-3. Create [AWS IoT Policy](http://docs.aws.amazon.com/iot/latest/developerguide/create-iot-policy.html) and named as *your-iot-thing-policy-name*
+3. Create [AWS IoT Policy](http://docs.aws.amazon.com/iot/latest/developerguide/create-iot-policy.html) with at least iot:Publish, iot:Receive permissions for IoT devices sending and receiving MQTT topic messanges. Then named as *your-iot-thing-policy-name*
 
 	```json
 	{
