@@ -1,13 +1,16 @@
 # Citus™ IoT Ecosystem
-This repository contains the Citus™ IoT Ecosystem bootstrap code which is used to provision an IoT Platform in Citus™ IoT Ecosystem using Docker Compose and AWS CloudFormation on AWS.
+This document introduce about the Citus™ IoT Ecosystem with bootstrap instructions which is used to provision the infrasutructure and applications for Citus™ IoT Ecosystem using Docker Compose and AWS CloudFormation on AWS.
 
-<img src="https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/fpt-software-logo.png" width="150" height="120" />
+<br><img src="https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/fpt-software-logo.png" width="150" height="120" />
+
+*DUONG Dinh Cuong*
+CLOUD INNOVATION
 
 ---
 
 Description
 ===========
-Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through the Citus™ IoT Platform. It also supports dedicated infrastructure and shared infrastructure deployment.
+Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through Citus™ IoT Platform. It also supports to deploy on a dedicated infrastructure or a shared infrastructure.
 
 ---
 
@@ -23,22 +26,12 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 ---
 
-
-Architecture
-============
-
----
-
-![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-system-architecture.png)
-
----
-
 Features
 ========
 
 ---
 
-**Web Portal**
+**Centralized Web Portal**
 
 GUI Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer or tenant user. *This feature is still in reviewing for multi-tenant security concern using kubernetes.*
  + User Identity/User Groups/Roles Management using Auth0 (https://auth0.com) as an external service.
@@ -79,8 +72,29 @@ A set of featured Real-time Dashboards which is used to display, monitor and con
 
 ---
 
-User Story
+Architecture
 ============
+
+---
+
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-system-architecture.png)
+
+---
+
+Product Backlog
+============
+
+---
+
+
+| No. | User Story Name |
+|-----|------|
+| 1 | As an Embedded SE, I want to declare my device in the Citus™ IoT Platform so that I can activate it later on |
+| 2 | As an Embedded SE, I want my device be able to connect to Citus™ IoT Platform so that I can store  data in the cloud |
+| 3 | As an Embedded SE, I want to update my software over-the-air when there is a new upgraded version requested |
+| 4 | As a Software Developer, I want to submit my application into the Citus™ IoT Platform so that I can use and share it to the other users|
+| 5 | As a Consumer, I want to ingest my telemetry data in the cloud to be view or analyse by the ecosystem's applications |
+| 6 | As a Consumer, I want to register to use a published application from others so that I can speed up my business|
 
 ---
 
@@ -181,9 +195,9 @@ Deployment
 	
 ---
 
-4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to store telemetry sensor data into DynamoDB.
-5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name*
-6. Launch a VPC with (YOUR-VPC-ID) and at least one public subnet (YOUR-VPC-SUBNET-ID)
+4. Create [AWS IoT DynamoDB Rule](http://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) to forward telemetry sensor topic data into DynamoDB.
+5. Create a [AWS S3 Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and named as *your-s3-certificate-bucket-name* to store temporary device certificates.
+6. Create a VPC with (YOUR-VPC-ID) and at least one public subnet (YOUR-VPC-SUBNET-ID) to host your system.
 7. Create a [Hosted Domain](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) with YOUR-ROUTE53-DOMAIN-NAME and retrieve YOUR-ROUTE53-HOSTED-ZONE-ID
 
 ---
