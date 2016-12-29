@@ -16,9 +16,9 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 | 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-iot-ecosystem-website.svg)](https://images.microbadger.com/badges/image/cuongdd1/citus-iot-ecosystem-website.svg) |
 | 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-application-gateway.svg)](https://images.microbadger.com/badges/image/cuongdd1/citus-application-gateway.svg) |
 | 3 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/device-lifecycle-service.svg)](https://images.microbadger.com/badges/image/cuongdd1/device-lifecycle-service.svg) |
-| 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | **`370 MB | layers`** |
+| 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | **`370 MB | 27 layers`** |
 | 5 | sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/sensor-remote-dashboard.svg)](https://images.microbadger.com/badges/image/cuongdd1/sensor-remote-dashboard.svg)|
-| 6 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`138 MB | layers`** |
+| 6 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`138 MB | 11 layers`** |
 | 7 | seniot-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/seniot-gateway.svg)](https://images.microbadger.com/badges/image/cuongdd1/seniot-gateway.svg)|
 
 ---
