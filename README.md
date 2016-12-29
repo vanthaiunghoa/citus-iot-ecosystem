@@ -11,7 +11,7 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 ---
 
-| No. | Primary Service  | Downloads  | Image Size |
+| No. | Primary Service  | Hits  | Image Info |
 |---|---|---|---|
 | 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | **`136 MB|7 layers`**|
 | 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | [![image info](https://images.microbadger.com/badges/image/cuongdd1/citus-application-gateway.svg)](https://images.microbadger.com/badges/image/cuongdd1/citus-application-gateway.svg) |
