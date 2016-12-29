@@ -84,7 +84,27 @@ User Story
 
 ---
 
-![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0001.png)
+![US-0001](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0001.png)
+
+---
+
+![US-0002](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0002.png)
+
+---
+
+![US-0003](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0003.png)
+
+---
+
+![US-0004](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0004.png)
+
+---
+
+![US-0005](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0005.png)
+
+------
+
+![US-0006](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0006.png)
 
 ---
 
