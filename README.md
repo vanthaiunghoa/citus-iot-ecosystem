@@ -23,39 +23,48 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 
 ---
 
+
+Architecture
+============
+
+---
+
 ![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-system-architecture.png)
 
 ---
 
 Features
 ========
+
+---
+
 **Web Portal**
 
 GUI Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer or tenant user. *This feature is still in reviewing for multi-tenant security concern using kubernetes.*
- + User Groups/Roles Management using Auth0 (https://auth0.com)
- + Secured application access by API Gateway through Key Authentication
+ + User Identity/User Groups/Roles Management using Auth0 (https://auth0.com) as an external service.
+ + Protect device/application accesses by API Gateway using API Secret Key Authentication feature.
 
 ---
 
 **Application Platform**
 
 Container-based application engine is designed for Microservices architecture which is easily to deploy on Docker-Compose, Docker Swarm or Kubernetes.
- + Publish or consume a Docker-based application
- + Continuous Delivery Support w/ Web Hook
+ + Publish or consume Docker-based applications across users.
+ + Continuous Delivery Support w/ Docker Hub using Web Hook.
 
 ---
 
 **Manage Your Device**
 
-Device lifecycle management service and device security process that help you enhancing the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
- + Device Provisioning/Activation/Management
- + Device Software Update (OTA)
+Device Lifecycle Management service and device security process that help you enhancing the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
+ + Device Provisioning/Activation/Management.
+ + Device Software Update (OTA) with CI/CD.
 
 ---
 
-**Analytics**
+**Data Analytics**
 
-Data analytics services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
+A set of featured (default) services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
  + Statistical Anomaly Detection
  + Plate Recognition (3rd Party)
  + Face Detection (3rd Party)
@@ -70,26 +79,36 @@ A set of featured Real-time Dashboards which is used to display, monitor and con
 
 ---
 
-![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-telemetry-flow.png)
+User Story
+============
 
 ---
 
-Technologies
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0001.png)
+
+---
+
+Technology
 ============
+
+---
+
+**Platforms** 
  + AWS Cloud Computing Basic Services (VPC, EC2, Route53, Elastic IP, IAM, S3)
  + AWS IoT (Hub, Registry, Rule Engine, ThingShadow) 
- + DynamoDB/Streamming
+ + Cassandra/DynamoDB w/Streamming
  + ElasticSearch/Logstash
  + Kong API Gateway
  + Docker/DockerHub
  + Docker-Compose
  + Docker Swarm
- 
+ + Kubernetes
+ + Node-RED
 ---
 
- + Kubernetes
- + Cassandra
- + Node-RED
+**Languages** 
+ 
+ + HTML5/CSS3
  + NodeJS 
  + AngularJS
  + D3JS
@@ -99,8 +118,13 @@ Technologies
 
 ---
 
-Prerequisites
-=============
+Deployment
+===========
+
+---
+
+<h2>Prerequisites</h2>
+
 **I. AWS Environment**
 
 (Supported Region: *ap-northeast-1* as default if using template)
@@ -150,8 +174,7 @@ Prerequisites
 
 ---
 
-Deployments
-===========
+<h2>Step By Step</h2>
 
 **I. Setup Development Environment**
 
@@ -245,7 +268,7 @@ Replace the **Base64UserData.Default** with the encoded value in the Cloud Forma
 
 ---
 
-You need to setup a corrected IoT environment with AWS IoT Policy, AWS IoT Rule, AWS DynamoDB with Stream Enabled to use with this platform. For more information, please contact us by email: cuongdd1@fsoft.com.vn!
+You need to setup a corrected AWS IoT environment for AWS IoT Policy, AWS IoT Rule, AWS DynamoDB (Stream Enabled) to use with this platform. For more information, please contact us by email: cuongdd1@fsoft.com.vn!
 
 ---
 
