@@ -84,7 +84,7 @@ services:
     depends_on:
      - device-lifecycle-service
      - citus-elasticsearch-svc
-    environment:     
+    environment:
      - ELASTIC_SEARCH_SERVICE=http://citus-elasticsearch-svc:9200/telemetry/sensors/_search
      - DEVICE_LIFECYCLE_SERVICE=http://device-lifecycle-service:3000
     ports:
