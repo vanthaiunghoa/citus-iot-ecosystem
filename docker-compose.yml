@@ -13,7 +13,7 @@ services:
      - 443:443
     restart: always
   citus-iot-ecosystem-website:
-    image: cuongdd1/citus-iot-ecosystem-website:demo
+    image: cuongdd1/citus-iot-ecosystem-website:prototype
     depends_on:
      - device-lifecycle-service
      - citus-application-gateway
@@ -25,7 +25,7 @@ services:
      - AWS_IOT_CERT_BUCKET=${AWS_IOT_CERT_BUCKET}
      - FPT_APPLICATION_GATEWAY_ADMIN=http://citus-application-gateway:8001
      - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000
-     - FPT_DEVICE_MANAGEMENT_SERVICE=http://device-lifecycle-service:3000
+     - DEVICE_LIFECYCLE_SERVICE=http://device-lifecycle-service:3000
     ports:
      - 8080:1880
     restart: always  
