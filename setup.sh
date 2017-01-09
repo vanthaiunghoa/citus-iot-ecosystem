@@ -20,9 +20,9 @@ else
 	gpgcheck=1
 	gpgkey=https://yum.dockerproject.org/gpg
 	EOF
-	yum install docker-engine python27 -y
+	yum install docker-engine python -y
 	curl -O https://bootstrap.pypa.io/get-pip.py
-	python27 get-pip.py	
+	python get-pip.py
 	pip install awscli
 	pip install --upgrade awscli
 	systemctl enable docker.service
