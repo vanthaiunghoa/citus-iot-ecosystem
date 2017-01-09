@@ -20,7 +20,7 @@ else
 	gpgcheck=1
 	gpgkey=https://yum.dockerproject.org/gpg
 	EOF
-	yum install docker-engine python -y	
+	yum install docker-engine -y	
 	systemctl enable docker.service
 	systemctl start docker
 	usermod -aG docker centos	
