@@ -20,12 +20,12 @@ else
 	gpgcheck=1
 	gpgkey=https://yum.dockerproject.org/gpg
 	EOF
-	yum install docker-engine -y	
+	yum install docker-engine -y
 	systemctl enable docker.service
 	systemctl start docker
-	usermod -aG docker centos	
+	usermod -aG docker centos
 	setsebool httpd_can_network_connect on -P
-	getsebool -a | grep httpd	
+	getsebool -a | grep httpd
 	yum clean all
 fi
 
