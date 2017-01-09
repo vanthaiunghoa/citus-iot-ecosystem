@@ -5,6 +5,7 @@ services:
     depends_on:     
      - citus-application-gateway
      - citus-iot-ecosystem-website
+     - citus-kubernetes-tunnel
     environment:
      - FPT_APPLICATION_WEBSITE=http://citus-iot-ecosystem-website:1880
      - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000    
