@@ -58,7 +58,7 @@ controllerInstanceType: t2.medium
 workerCount: 3 
 
 # Instance type for worker nodes
-#workerInstanceType: m3.medium
+workerInstanceType: t2.medium
 
 # Disk size (GiB) for worker nodes
 #workerRootVolumeSize: 30
