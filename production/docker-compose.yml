@@ -18,7 +18,8 @@ services:
     ports:
      - 8020:8020
     volumes:
-    - /usr/share/citus-iot-ecosystem:/root/.kube
+    - /usr/share/citus-iot-ecosystem/kubeconfig:/root/.kube/config
+    - /usr/share/citus-iot-ecosystem/credentials:/root/.kube/credentials
     restart: always
   citus-iot-ecosystem-website:
     image: cuongdd1/citus-iot-ecosystem-website:latest
