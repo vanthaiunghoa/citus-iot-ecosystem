@@ -25,8 +25,7 @@ else
 	systemctl start docker
 	usermod -aG docker centos	
 	setsebool httpd_can_network_connect on -P
-	getsebool -a | grep httpd
-	rm -f get-pip.py
+	getsebool -a | grep httpd	
 	yum clean all
 fi
 
