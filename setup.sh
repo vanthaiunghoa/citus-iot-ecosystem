@@ -30,6 +30,7 @@ else
 	usermod -aG docker centos	
 	setsebool httpd_can_network_connect on -P
 	getsebool -a | grep httpd
+	rm -f get-pip.py
 	yum clean all
 fi
 
