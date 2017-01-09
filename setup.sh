@@ -39,7 +39,7 @@ curl -L https://github.com/coreos/kube-aws/releases/download/v${KUBE_AWS_VERSION
 tar -zxvf /tmp/kube-aws-linux-amd64.tar.gz
 mv linux-amd64/kube-aws /usr/local/bin
 rm -f /tmp/kube-aws-linux-amd64.tar.gz
-    
+
 curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
