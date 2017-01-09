@@ -34,6 +34,11 @@ else
 	yum clean all
 fi
 
+curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 chmod +x ./kubectl && mv ./kubectl /usr/bin/kubectl
 curl -L https://github.com/coreos/kube-aws/releases/download/v${KUBE_AWS_VERSION}/kube-aws-linux-amd64.tar.gz -o /tmp/kube-aws-linux-amd64.tar.gz	
@@ -41,11 +46,6 @@ tar -zxvf /tmp/kube-aws-linux-amd64.tar.gz
 mv linux-amd64/kube-aws /usr/bin
 rm -f /tmp/kube-aws-linux-amd64.tar.gz
 rm -rf linux-amd64/
-
-curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
-ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-docker-compose --version
 
 cd /usr/share/citus-iot-ecosystem/production
 kube-aws render
