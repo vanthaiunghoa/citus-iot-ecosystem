@@ -48,8 +48,8 @@ rm -f /tmp/kube-aws-linux-amd64.tar.gz
 rm -rf linux-amd64/
 
 cd /usr/share/citus-iot-ecosystem/production
-kube-aws render
-kube-aws up
+kube-aws render credentials --generate-ca
+kube-aws up --s3-uri s3://citus-iot-ecosystem/production
 
 cd /usr/share/citus-iot-ecosystem/
 docker-compose up -d --force-recreate
