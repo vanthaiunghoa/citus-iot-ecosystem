@@ -7,7 +7,7 @@ clusterName: citus-iot-ecosystem
 # from worker nodes and external clients. Configure the options
 # below if you'd like kube-aws to create a Route53 record sets/hosted zones
 # for you.  Otherwise the deployer is responsible for making this name routable
-externalDNSName: 10.0.10.50
+externalDNSName: 10.0.10.20
 
 # CoreOS release channel to use. Currently supported options: alpha, beta, stable
 # See coreos.com/releases for more information
