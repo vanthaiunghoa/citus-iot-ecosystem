@@ -48,6 +48,13 @@ rm -f /tmp/kube-aws-linux-amd64.tar.gz
 rm -rf linux-amd64/
 
 cd /usr/share/citus-iot-ecosystem/production
+kube-aws init \
+	--cluster-name=citus-iot-kubernetes \
+	--external-dns-name=cluster.citus.io \
+	--region=ap-northeast-1 \
+	--availability-zone=ap-northeast-1c \
+	--key-name=CLOUD-Bastion-Development-KeyPair \
+	--kms-key-arn="arn:aws:kms:ap-northeast-1:217793734226:key/e3bfb84f-cf43-4468-99f7-b9cef20dc2ea"
 kube-aws render credentials --generate-ca
 kube-aws up --s3-uri s3://apps.citus.io/stacktemplate
 
