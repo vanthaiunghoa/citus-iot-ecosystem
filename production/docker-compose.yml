@@ -37,6 +37,8 @@ services:
      - KUBERNETES_TUNNEL_SERVICE=http://citus-kubernetes-tunnel:8020
     ports:
      - 8080:1880
+    volumes:
+    - /usr/share/citus-iot-ecosystem/production:/root/.kube
     restart: always  
   citus-application-gateway:
     image: cuongdd1/citus-application-gateway
