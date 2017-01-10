@@ -34,6 +34,7 @@ services:
      - FPT_APPLICATION_GATEWAY_ADMIN=http://citus-application-gateway:8001
      - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000
      - DEVICE_LIFECYCLE_SERVICE=http://device-lifecycle-service:3000
+     - KUBERNETES_TUNNEL_SERVICE=http://citus-kubernetes-tunnel:8020
     ports:
      - 8080:1880
     restart: always  
@@ -75,7 +76,7 @@ services:
      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
      - AWS_IOT_DEVICE_POLICY=${AWS_IOT_DEVICE_POLICY}
-     - AWS_DYN_TABLE_NAME=${AWS_DYN_TABLE_NAME}
+     - AWS_METADATA_TABLE_NAME=${AWS_METADATA_TABLE_NAME}
     ports:
      - 3000:3000
     restart: always
