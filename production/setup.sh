@@ -55,7 +55,7 @@ kube-aws init \
 	--availability-zone=ap-northeast-1c \
 	--key-name=CLOUD-Bastion-Development-KeyPair \
 	--kms-key-arn="arn:aws:kms:ap-northeast-1:217793734226:key/e3bfb84f-cf43-4468-99f7-b9cef20dc2ea"
-kube-aws render credentials --generate-ca
+kube-aws render
 kube-aws up --s3-uri s3://apps.citus.io/stacks
 
 cd /usr/share/citus-iot-ecosystem/
