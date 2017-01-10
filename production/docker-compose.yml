@@ -26,6 +26,7 @@ services:
      - device-lifecycle-service
      - citus-application-gateway
      - sensor-remote-dashboard
+     - citus-kubernetes-tunnel
     environment:
      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
@@ -34,7 +35,7 @@ services:
      - FPT_APPLICATION_GATEWAY_ADMIN=http://citus-application-gateway:8001
      - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000
      - DEVICE_LIFECYCLE_SERVICE=http://device-lifecycle-service:3000
-     - KUBERNETES_TUNNEL_SERVICE=http://citus-kubernetes-tunnel:8020
+     - KUBERNETES_TUNNEL_SERVICE=http://citus-kubernetes-tunnel:8020/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
     ports:
      - 8080:1880
     volumes:
