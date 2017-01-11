@@ -54,7 +54,7 @@ services:
      - 8001:8001
     restart: always
   cassandra-database:
-    image: cassandra:latest
+    image: cassandra:2.2
     ports:
      - 9042:9042
     restart: always
