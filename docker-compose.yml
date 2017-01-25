@@ -13,7 +13,7 @@ services:
      - 443:443
     restart: always
   citus-iot-ecosystem-website:
-    image: cuongdd1/citus-iot-ecosystem-website:prototype
+    image: cuongdd1/citus-iot-ecosystem-website:1.1.3-rp
     depends_on:
      - device-lifecycle-service
      - citus-application-gateway
