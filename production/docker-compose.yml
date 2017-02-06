@@ -42,7 +42,7 @@ services:
     - /usr/share/citus-iot-ecosystem/production:/root/.kube
     restart: always  
   citus-application-gateway:
-    image: cuongdd1/citus-application-gateway
+    image: cuongdd1/citus-application-gateway:kubernetes
     depends_on:
      - cassandra-database
     environment:
