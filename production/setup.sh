@@ -3,7 +3,7 @@ set -e -x
 OS_RELEASE=$(cat /etc/os-release)
 AMAZON_AMI="Amazon Linux AMI"
 CENTOS_AMI="CentOS Linux"
-KUBE_AWS_VERSION="0.9.2-rc.5"
+KUBE_AWS_VERSION="0.9.4-rc.2"
 
 if [ -z "${OS_RELEASE##*$AMAZON_AMI*}" ]; then
 	yum install docker -y
@@ -52,7 +52,7 @@ kube-aws init \
 	--cluster-name=citus-iot-kubernetes \
 	--external-dns-name=cluster.citus.io \
 	--region=ap-northeast-1 \
-	--availability-zone=ap-northeast-1c \
+	--availability-zone=ap-northeast-1a \
 	--key-name=CLOUD-Bastion-Development-KeyPair \
 	--kms-key-arn="arn:aws:kms:ap-northeast-1:217793734226:key/e3bfb84f-cf43-4468-99f7-b9cef20dc2ea"
 kube-aws render && kube-aws validate --s3-uri s3://apps.citus.io/stacks
