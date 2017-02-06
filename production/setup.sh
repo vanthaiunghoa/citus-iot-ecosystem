@@ -48,6 +48,7 @@ rm -f /tmp/kube-aws-linux-amd64.tar.gz
 rm -rf linux-amd64/
 
 cd /usr/share/citus-iot-ecosystem/production
+rm -rf cluster.yaml credentials/ userdata/ kubeconfig
 kube-aws init \
 	--cluster-name=citus-iot-kubernetes \
 	--external-dns-name=cluster.citus.io \
