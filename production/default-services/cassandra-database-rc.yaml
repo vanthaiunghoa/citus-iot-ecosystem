@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: cassandra-database
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: cassandra-rc-pod
+      labels:
+        name: cassandra-rc-pod
+        context: cassandra-pv
+    spec:
+      containers:
+      - name: cassandra-rc-pod
+        image: cassandra:2.2
+        volumeMounts:
+        - mountPath: "/var/lib/cassandra"
+          name: cassandra-ebs
+        ports:
+        - containerPort: 9042
+      volumes:
+      - name: cassandra-ebs
+        persistentVolumeClaim:
+          claimName: cassandra-pvc
