@@ -3,7 +3,8 @@ set -e -x
 OS_RELEASE=$(cat /etc/os-release)
 AMAZON_AMI="Amazon Linux AMI"
 CENTOS_AMI="CentOS Linux"
-KUBE_AWS_VERSION="0.9.4-rc.2"
+KUBE_AWS_VERSION="v0.9.4-rc.2"
+KUBERNETES_VERSION="v1.5.2"
 
 if [ -z "${OS_RELEASE##*$AMAZON_AMI*}" ]; then
 	yum install docker -y
@@ -39,9 +40,9 @@ chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 
-curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBERNETES_VERSION}/bin/linux/amd64/kubectl
 chmod +x ./kubectl && mv ./kubectl /usr/bin/kubectl
-curl -L https://github.com/coreos/kube-aws/releases/download/v${KUBE_AWS_VERSION}/kube-aws-linux-amd64.tar.gz -o /tmp/kube-aws-linux-amd64.tar.gz	
+curl -L https://github.com/coreos/kube-aws/releases/download/${KUBE_AWS_VERSION}/kube-aws-linux-amd64.tar.gz -o /tmp/kube-aws-linux-amd64.tar.gz	
 tar -zxvf /tmp/kube-aws-linux-amd64.tar.gz
 mv linux-amd64/kube-aws /usr/bin
 rm -f /tmp/kube-aws-linux-amd64.tar.gz
