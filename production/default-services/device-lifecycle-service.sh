@@ -1,3 +1,6 @@
+#! /bin/bash
+
+cat > /tmp/device-lifecycle-service.yaml <<EOF
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -19,19 +22,19 @@ spec:
   template:
     metadata:
       name: device-lifecycle-service
-      labels:        
+      labels:
         app: device-lifecycle-service
-        version: "latest"    
+        version: "latest"
     spec:
       containers:
       - name: device-lifecycle-service
         image: cuongdd1/device-lifecycle-service:latest
-        imagePullPolicy: IfNotPresent        
+        imagePullPolicy: IfNotPresent
         securityContext:
-          privileged: false        
+          privileged: false
         ports:
         - containerPort: 3000
-        env: 
+        env:
         - name: AWS_DEFAULT_REGION
           value: ${AWS_DEFAULT_REGION}
         - name: AWS_ACCESS_KEY_ID
@@ -42,3 +45,7 @@ spec:
           value: ${AWS_IOT_DEVICE_POLICY}
         - name: AWS_METADATA_TABLE_NAME
           value: ${AWS_METADATA_TABLE_NAME}
+EOF
+
+kubectl create -f /tmp/device-lifecycle-service.yaml --kubeconfig=kubeconfig
+rm -f /tmp/device-lifecycle-service.yaml
