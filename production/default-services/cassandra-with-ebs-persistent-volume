@@ -2,5 +2,5 @@
 aws ec2 create-volume --region ap-northeast-1 --availability-zone ap-northeast-1a --size 5 --volume-type gp2
 kubectl create -f default-services/persistent-volume.yaml --kubeconfig=kubeconfig
 kubectl create -f default-services/persistent-volume-claim.yaml --kubeconfig=kubeconfig
-kubectl create -f default-services/cassandra-database-deployment.yaml --kubeconfig=kubeconfig
-kubectl expose rc cassandra-database --target-port=9042 --port=9042 --type=ClusterIP --kubeconfig=kubeconfig
+kubectl create -f default-services/cassandra-database.yaml --kubeconfig=kubeconfig
+kubectl expose deployment cassandra-database --target-port=9042 --port=9042 --type=ClusterIP --kubeconfig=kubeconfig
