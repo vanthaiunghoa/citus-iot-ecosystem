@@ -8,7 +8,7 @@ services:
      - citus-kubernetes-tunnel
     environment:
      - FPT_APPLICATION_WEBSITE=http://citus-iot-ecosystem-website:1880
-     - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000    
+     - FPT_APPLICATION_GATEWAY_PROXY=http://apisrv.citus.io:8000    
     ports:
      - 80:80
      - 443:443
@@ -32,8 +32,8 @@ services:
      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
      - AWS_IOT_CERT_BUCKET=${AWS_IOT_CERT_BUCKET}
-     - FPT_APPLICATION_GATEWAY_ADMIN=http://citus-application-gateway:8001
-     - FPT_APPLICATION_GATEWAY_PROXY=http://citus-application-gateway:8000
+     - FPT_APPLICATION_GATEWAY_ADMIN=http://apisrv.citus.io:8001
+     - FPT_APPLICATION_GATEWAY_PROXY=http://apisrv.citus.io:8000
      - DEVICE_LIFECYCLE_SERVICE=http://device-lifecycle-service:3000
      - KUBERNETES_TUNNEL_SERVICE=http://citus-kubernetes-tunnel:8020/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
     ports:
