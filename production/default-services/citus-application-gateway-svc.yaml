@@ -17,4 +17,4 @@ spec:
     targetPort: 8001
   selector:
     app: citus-application-gateway
-  type: ClusterIP
+  type: LoadBalancer

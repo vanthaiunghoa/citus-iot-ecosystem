@@ -5,4 +5,4 @@ kubectl create -f default-services/persistent-volume-claim.yaml --kubeconfig=kub
 kubectl create -f default-services/cassandra-database.yaml --kubeconfig=kubeconfig
 kubectl expose deployment cassandra-database --target-port=9042 --port=9042 --type=ClusterIP --kubeconfig=kubeconfig
 kubectl create -f default-services/citus-applycation-gateway.yaml --kubeconfig=kubeconfig
-kubectl expose deployment citus-applycation-gateway --target-port=8000 --port=8000 --type=LoadBalancer --kubeconfig=kubeconfig
+kubectl create -f default-services/citus-applycation-gateway-svc.yaml --kubeconfig=kubeconfig
