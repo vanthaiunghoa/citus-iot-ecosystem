@@ -4,7 +4,7 @@ OS_RELEASE=$(cat /etc/os-release)
 AMAZON_AMI="Amazon Linux AMI"
 CENTOS_AMI="CentOS Linux"
 KUBE_AWS_VERSION="v0.9.4-rc.2"
-KUBERNETES_VERSION="v1.4.8"
+KUBERNETES_VERSION="v1.5.0"
 
 if [ -z "${OS_RELEASE##*$AMAZON_AMI*}" ]; then
 	yum install docker -y
