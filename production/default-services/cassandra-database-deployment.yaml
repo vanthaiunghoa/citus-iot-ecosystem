@@ -3,11 +3,7 @@ kind: Deployment
 metadata:
   annotations:
       deployment.kubernetes.io/revision: "1"
-  name: cassandra-database
-  generation: 1
-    labels:
-      app: cassandra-database
-      version: "2.2"
+  name: cassandra-database  
   namespace: default
 spec:
   replicas: 1
@@ -25,8 +21,7 @@ spec:
       name: cassandra-database
       labels:        
         app: cassandra-database
-        version: "2.2"
-      context: cassandra-pv
+        version: "2.2"    
     spec:
       containers:
       - name: cassandra-database
