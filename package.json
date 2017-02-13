@@ -2,7 +2,7 @@
   "name": "citus-iot-ecosystem",
   "description": "Managing Citus IoT Ecosystem Deployment",
   "keywords": "UI, Apps, Deployment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
   "dependencies": {},
   "scripts": {
     "prepare": "mversion patch -mn 'Patch new version and publish'",
-    "postpublish": "git push && git push --tags"    
+    "postpublish": "git push && git push --tags"
   },
   "devDependencies": {}
 }
