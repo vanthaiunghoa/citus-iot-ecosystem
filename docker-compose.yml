@@ -46,6 +46,11 @@ services:
     ports:
      - 9042:9042
     restart: always
+  citus-cassandra-rest:
+    image: cuongdd1/citus-cassandra-rest:latest
+    ports:
+     - 8089:8088
+    restart: always
   sensor-remote-dashboard:
     image: cuongdd1/sensor-remote-dashboard
     depends_on:

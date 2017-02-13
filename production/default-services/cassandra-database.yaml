@@ -33,10 +33,7 @@ spec:
         - mountPath: "/var/lib/cassandra"
           name: cassandra-ebs
         ports:
-        - containerPort: 9042
-      dnsPolicy: ClusterFirst
-        restartPolicy: Always        
-        terminationGracePeriodSeconds: 30
+        - containerPort: 9042      
       volumes:
       - name: cassandra-ebs
         persistentVolumeClaim:
