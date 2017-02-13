@@ -7,3 +7,5 @@ kubectl expose deployment cassandra-database --target-port=9042 --port=9042 --ty
 kubectl create -f default-services/citus-applycation-gateway.yaml --kubeconfig=kubeconfig
 kubectl create -f default-services/citus-applycation-gateway-svc.yaml --kubeconfig=kubeconfig
 kubectl expose deployment device-lifecycle-service --target-port=3000 --port=80 --type=ClusterIP --kubeconfig=kubeconfig
+kubectl create -f default-services/citus-cassandra-rest.yaml --kubeconfig=kubeconfig
+kubectl expose deployment citus-cassandra-rest --target-port=8088 --port=80 --type=ClusterIP --kubeconfig=kubeconfig
