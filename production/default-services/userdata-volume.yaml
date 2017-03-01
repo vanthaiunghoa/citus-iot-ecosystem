@@ -1,14 +1,14 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: userdata-pv
+  name: userdata-pv-010
   labels:
     type: amazonEBS
 spec:
   capacity:
-    storage: 50Gi
+    storage: 100Mi
   accessModes:
     - ReadWriteOnce
   awsElasticBlockStore:
-    volumeID: vol-03b84e878cce5c701
+    volumeID: vol-07ea224e0ed0b75a4
     fsType: ext4

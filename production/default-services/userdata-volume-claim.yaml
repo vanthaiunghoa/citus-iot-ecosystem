@@ -4,9 +4,10 @@ metadata:
   name: userdata-pvc
   labels:
     type: amazonEBS
+  namespace: cuongdd1-fsoftcomvn
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 100Mi
