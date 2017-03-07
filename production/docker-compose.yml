@@ -17,10 +17,10 @@ services:
     ports:
      - 8020:8020
     volumes:
-    - /usr/share/citus-iot-ecosystem/production:/root/.kube    
+    - /usr/share/citus-iot-ecosystem/production:/root/.kube
     restart: always
   citus-iot-ecosystem-website:
-    image: cuongdd1/citus-iot-ecosystem-website:latest
+    image: cuongdd1/citus-iot-ecosystem-website:0.9.1
     depends_on:
      - citus-kubernetes-tunnel
     environment:
