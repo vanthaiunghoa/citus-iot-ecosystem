@@ -2,7 +2,7 @@
   "name": "citus-iot-ecosystem",
   "description": "Managing Citus IoT Ecosystem Deployment",
   "keywords": "UI, Apps, Deployment",
-  "version": "1.0.1",
+  "version": "0.9.0",
   "license": "MIT",
   "repository": {
     "type": "git",
