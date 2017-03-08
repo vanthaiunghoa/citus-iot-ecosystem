@@ -13,6 +13,7 @@ export AWS_SENSORS_TABLE_NAME=citus-iot-ecosystem.sensors
 export AWS_SENSORS_STREAM_VIEW_TYPE=new_and_old_images
 
 cd /usr/share/citus-iot-ecosystem/production/
+systemctl start docker
 docker-compose down
 docker rmi $(docker images -q)
 docker system prune
