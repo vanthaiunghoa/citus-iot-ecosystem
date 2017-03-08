@@ -20,7 +20,7 @@ services:
     - /usr/share/citus-iot-ecosystem/production:/root/.kube
     restart: always
   citus-iot-ecosystem-website:
-    image: cuongdd1/citus-iot-ecosystem-website:0.9.1
+    image: cuongdd1/citus-iot-ecosystem-website:${ECOSYSTEM_RELEASE_VERSION}
     depends_on:
      - citus-kubernetes-tunnel
     environment:

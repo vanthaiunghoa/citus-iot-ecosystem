@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e -x
 
+export ECOSYSTEM_RELEASE_VERSION=0.9.1
+
 export AWS_DEFAULT_REGION=ap-northeast-1
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
