@@ -1,0 +1,1 @@
+aws sts assume-role --role-arn arn:aws:iam::217793734226:role/IAMRoleBaseCitusIoT --role-session-name "CitusRoleSession" --profile IAMRoleBaseCitusIoT
