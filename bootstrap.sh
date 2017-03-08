@@ -3,9 +3,9 @@ set -e -x
 
 export ECOSYSTEM_RELEASE_VERSION=0.9.1
 
-export AWS_DEFAULT_REGION=ap-northeast-1
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
+export AWS_DEFAULT_REGION=ap-northeast-1
 export AWS_IOT_CERT_BUCKET=apps.citus.io/certs
 export AWS_IOT_DEVICE_POLICY=CitusSensorPolicy
 export AWS_METADATA_TABLE_NAME=citus-iot-ecosystem.metadata
