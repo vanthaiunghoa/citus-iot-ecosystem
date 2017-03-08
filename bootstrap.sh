@@ -13,4 +13,5 @@ export AWS_SENSORS_STREAM_VIEW_TYPE=new_and_old_images
 cd /usr/share/citus-iot-ecosystem/production/
 docker-compose down
 docker rmi $(docker images -q)
+docker system prune
 docker-compose up -d
