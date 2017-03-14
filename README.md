@@ -103,6 +103,9 @@ Product Backlog
 | 3 | As a User, I want to update my software over-the-air when there is a new upgraded version requested.|
 | 4 | As a Developer, I want to request my application with the Citus™ IoT Platform so that Administrator can review and approve my app before deploying.|
 | 5 | As an Administrator, I want to approve the pending requested applications so that Developers can deploy my application into the Citus™ IoT Platform.|
+---
+| No. | User Story Name |
+|-----|------|
 | 6 | As a Developer, I want to deployed the approved applications so that I can test and share it to the other users.|
 | 7 | As a User, I want to ingest my telemetry data in the cloud to be view or analyse by the ecosystem's applications.|
 | 8 | As a User, I want to use a published application from others so that I can speed up my business.|
