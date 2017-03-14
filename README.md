@@ -104,7 +104,7 @@ Product Backlog
 | 4 | As a Subscriptor, I want to request my application with the Citus™ IoT Platform so that Administrator can review and approve it|
 | 5 | As an Administrator, I want to approve the pending requested applications so that Subscriptors can deploy and share it to the other users|
 | 6 | As a User, I want to ingest my telemetry data in the cloud to be view or analyse by the ecosystem's applications |
-| 7 | As a User, I want to register a published application from others so that I can speed up my business|
+| 7 | As a User, I want to use a published application from others so that I can speed up my business|
 
 ---
 
