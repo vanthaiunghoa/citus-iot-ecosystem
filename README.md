@@ -98,12 +98,13 @@ Product Backlog
 
 | No. | User Story Name |
 |-----|------|
-| 1 | As an Embedded SE, I want to declare my device in the Citus™ IoT Platform so that I can activate it later on |
-| 2 | As an Embedded SE, I want my device be able to connect to Citus™ IoT Platform so that I can store  data in the cloud |
-| 3 | As an Embedded SE, I want to update my software over-the-air when there is a new upgraded version requested |
-| 4 | As a Software Developer, I want to submit my application into the Citus™ IoT Platform so that I can use and share it to the other users|
-| 5 | As a Consumer, I want to ingest my telemetry data in the cloud to be view or analyse by the ecosystem's applications |
-| 6 | As a Consumer, I want to register to use a published application from others so that I can speed up my business|
+| 1 | As a User, I want to declare my device in the Citus™ IoT Platform so that I can activate it later on |
+| 2 | As a User, I want my device be able to connect to Citus™ IoT Platform so that I can store  data in the cloud |
+| 3 | As a User, I want to update my software over-the-air when there is a new upgraded version requested |
+| 4 | As a Subscriptor, I want to request my application with the Citus™ IoT Platform so that Administrator can review and approve it|
+| 5 | As an Administrator, I want to approve the pending requested applications so that Subscriptors can deploy and share it to the other users|
+| 6 | As a User, I want to ingest my telemetry data in the cloud to be view or analyse by the ecosystem's applications |
+| 7 | As a User, I want to register a published application from others so that I can speed up my business|
 
 ---
 
