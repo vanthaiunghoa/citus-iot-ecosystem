@@ -121,15 +121,15 @@ Product Backlog
 
 ---
 
-![US-0004](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0004.png)
+![US-0004/5/6](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0004.png)
 
 ---
 
-![US-0005](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0005.png)
+![US-0007](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0007.png)
 
 ------
 
-![US-0006](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0006.png)
+![US-0008](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/backlog/US-0008.png)
 
 ---
 
