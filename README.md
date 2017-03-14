@@ -81,6 +81,15 @@ Architecture
 
 ---
 
+System Diagram
+============
+
+---
+
+![Citus IoT Architecture](https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/citus-iot-ecosystem-system-diagram.png)
+
+---
+
 Product Backlog
 ============
 
