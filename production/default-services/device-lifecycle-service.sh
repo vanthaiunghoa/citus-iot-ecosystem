@@ -45,6 +45,10 @@ spec:
           value: ${AWS_IOT_DEVICE_POLICY}
         - name: AWS_METADATA_TABLE_NAME
           value: ${AWS_METADATA_TABLE_NAME}
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
 EOF
 
 kubectl create -f /tmp/device-lifecycle-service.yaml --kubeconfig=kubeconfig
