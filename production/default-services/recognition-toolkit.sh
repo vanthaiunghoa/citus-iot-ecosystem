@@ -45,6 +45,10 @@ spec:
           value: ${SECRET_KEY}
         - name: API_KEY
           value: ${API_KEY}
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100Mi
 EOF
 
 kubectl create -f /tmp/recognition-toolkit.yaml --kubeconfig=kubeconfig
