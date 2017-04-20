@@ -45,6 +45,10 @@ spec:
           value: ${ELASTIC_SEARCH_SERVICE}
         - name: DEVICE_LIFECYCLE_SERVICE
           value: ${DEVICE_LIFECYCLE_SERVICE}
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
 EOF
 
 kubectl create -f /tmp/sensor-analytics.yaml --kubeconfig=kubeconfig
