@@ -13,7 +13,7 @@ spec:
   selector:
       matchLabels:
         app: recognition-toolkit
-        version: "latest"
+        version: "0.0.2"
   strategy:
       rollingUpdate:
         maxSurge: 1
@@ -24,11 +24,11 @@ spec:
       name: recognition-toolkit
       labels:
         app: recognition-toolkit
-        version: "latest"
+        version: "0.0.2"
     spec:
       containers:
       - name: recognition-toolkit
-        image: cuongdd1/citus-recognition-service:latest
+        image: cuongdd1/citus-recognition-service:0.0.2
         imagePullPolicy: IfNotPresent
         securityContext:
           privileged: false
