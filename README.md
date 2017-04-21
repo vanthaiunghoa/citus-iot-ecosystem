@@ -1,5 +1,5 @@
 # Citus™ IoT Ecosystem
-This document introduce about the Citus™ IoT Ecosystem with bootstrap instructions which is used to provision the infrasutructure and applications for Citus™ IoT Ecosystem using Docker Compose and AWS CloudFormation on AWS.
+This document introduce about the Citus™ IoT Ecosystem with bootstrap instructions which is used to provision the infrasutructure and applications for Citus™ IoT Ecosystem using Docker Compose, Kubernetes and AWS CloudFormation on AWS.
 
 <br><img src="https://raw.githubusercontent.com/cuongquay/citus-iot-ecosystem/master/pictures/fpt-software-logo.png" width="150" height="120" />
 
@@ -18,12 +18,13 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 |---|---|---|---|
 | 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | **`136 MB|7 layers`**|
 | 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | **`35 MB|23 layers`**|
-| 3 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | **`370 MB|27 layers`**|
-| 4 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | **`29 MB|10 layers`**|
-| 5 | sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | **`47 MB|11 layers`**|
-| 6 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`138 MB|11 layers`**|
-| 7 | citus-recognition-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`40 MB|7 layers`**|
-| 8 | seniot-gateway (Node-RED) | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | **`137 MB|13 layers`**|
+| 3 | cassandra:2.2 (database) | [![Pulls](https://img.shields.io/docker/pulls/library/cassandra.svg?maxAge=2592000)]() | **`172 MB|21 layers`**|
+| 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | **`370 MB|27 layers`**|
+| 5 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | **`29 MB|10 layers`**|
+| 6 | sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | **`47 MB|11 layers`**|
+| 7 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`138 MB|11 layers`**|
+| 8 | citus-recognition-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`40 MB|7 layers`**|
+| 9 | seniot-gateway (Node-RED) | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/seniot-gateway.svg?maxAge=2592000)]() | **`137 MB|13 layers`**|
 
 ---
 
@@ -56,20 +57,31 @@ Device Lifecycle Management service and device security process that help you en
 
 ---
 
-**Data Analytics**
+**Shared Services**
 
-A set of featured (default) services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition. 
- + Statistical Anomaly Detection
- + Plate Recognition (3rd Party)
- + Face Detection (3rd Party)
+A set of featured (default) services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition through RESTful API.
+ + Statistical Anomaly Detection (eBay Atlas)
+ + Plate Recognition (ANPR OpenFPT)
+ + Face Detection (AWS Rekognition)
 
 ---
 
-**Monitoring & Control**
+**Standard Applications**
 
-A set of featured Real-time Dashboards which is used to display, monitor and control your IoT devices directly using Web Portal.
- + Sensor Remote Dashboard
- + Citus Sensor Analytics
+A set of featured applications which is used to display, monitor and control your IoT devices directly using a centralized web portal.
+ + Sensor Dashboard
+ + Sensor Analytics
+ + Recognition Toolkit
+ + File Manager
+
+---
+
+**Simulation Toolbox**
+
+We exposed Seniot™ Gateway (Node-RED) solution with alternative versions such as Sensor Simulator for developers to develop/test their whole system without using a real connected hardware.
+ + Latest (Original Node-RED)
+ + Sensor Simulator (Node-RED with AWS IoT)
+ + Lennox Casestudy (Node-RED with Azure IoT)
 
 ---
 

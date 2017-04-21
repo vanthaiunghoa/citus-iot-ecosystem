@@ -39,4 +39,8 @@ spec:
           value: cassandra-database
         - name: KONG_PG_HOST
           value: cassandra-database
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi 
           
