@@ -31,3 +31,7 @@ spec:
           privileged: false        
         ports:
         - containerPort: 8088
+      resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi 
