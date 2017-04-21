@@ -13,7 +13,7 @@ spec:
   selector:
       matchLabels:
         app: sensor-analytics
-        version: "1.0.2"
+        version: "1.0.3"
   strategy:
       rollingUpdate:
         maxSurge: 1
@@ -24,11 +24,11 @@ spec:
       name: sensor-analytics
       labels:
         app: sensor-analytics
-        version: "1.0.2"
+        version: "1.0.3"
     spec:
       containers:
       - name: sensor-analytics
-        image: cuongdd1/citus-sensor-analytics:1.0.2
+        image: cuongdd1/citus-sensor-analytics:1.0.3
         imagePullPolicy: IfNotPresent
         securityContext:
           privileged: false
