@@ -34,6 +34,10 @@ spec:
           privileged: false
         ports:
         - containerPort: 9200
+        resources:
+          requests:
+            cpu: 100m
+            memory: 512Mi
         env:
         - name: AWS_DEFAULT_REGION
           value: ${AWS_DEFAULT_REGION}
