@@ -34,11 +34,11 @@ spec:
           name: cassandra-ebs
         ports:
         - containerPort: 9042      
+        resources:
+          requests:
+            cpu: 100m
+            memory: 512Mi
       volumes:
       - name: cassandra-ebs
         persistentVolumeClaim:
           claimName: cassandra-pvc
-      resources:
-          requests:
-            cpu: 100m
-            memory: 256Mi 
