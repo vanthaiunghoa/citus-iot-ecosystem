@@ -45,6 +45,8 @@ spec:
           value: ${ELASTIC_SEARCH_SERVICE}
         - name: DEVICE_LIFECYCLE_SERVICE
           value: ${DEVICE_LIFECYCLE_SERVICE}
+        - name: AUTH0_CLIENT_SECRET
+          value: ${AUTH0_CLIENT_SECRET}
         resources:
           requests:
             cpu: 100m
