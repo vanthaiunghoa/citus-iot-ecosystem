@@ -41,10 +41,10 @@ spec:
           value: ${AWS_ACCESS_KEY_ID}
         - name: AWS_SECRET_ACCESS_KEY
           value: ${AWS_SECRET_ACCESS_KEY}
-        - name: SECRET_KEY
-          value: ${SECRET_KEY}
-        - name: API_KEY
-          value: ${API_KEY}
+        - name: AUTH0_CLIENT_SECRET
+          value: ${AUTH0_CLIENT_SECRET}
+        - name: OPENFPT_API_KEY
+          value: ${OPENFPT_API_KEY}
         resources:
           requests:
             cpu: 100m
