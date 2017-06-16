@@ -47,6 +47,8 @@ spec:
           value: ${DEVICE_LIFECYCLE_SERVICE}
         - name: AUTH0_CLIENT_SECRET
           value: ${AUTH0_CLIENT_SECRET}
+        - name: API_SECRET_KEY
+          value: ${API_SECRET_KEY}
         resources:
           requests:
             cpu: 100m
