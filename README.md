@@ -18,9 +18,9 @@ Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which
 |---|---|---|---|
 | 1 | citus-iot-ecosystem-website | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-iot-ecosystem-website.svg?maxAge=2592000)]() | **`136 MB|7 layers`**|
 | 2 | citus-application-gateway | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-application-gateway.svg?maxAge=2592000)]() | **`35 MB|23 layers`**|
-| 3 | cassandra:2.2 (database) | [![Pulls](https://img.shields.io/docker/pulls/library/cassandra.svg?maxAge=2592000)]() | **`172 MB|21 layers`**|
-| 4 | citus-elasticsearch-svc | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | **`370 MB|27 layers`**|
-| 5 | device-lifecycle-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-lifecycle-service.svg?maxAge=2592000)]() | **`29 MB|10 layers`**|
+| 3 | citus-cassandra-rest (API) | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-cassandra-rest.svg?maxAge=2592000)]() | **`110 MB|21 layers`**|
+| 4 | citus-elasticsearch-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/elasticsearch-logstash-dynamodb-streams.svg?maxAge=2592000)]() | **`370 MB|27 layers`**|
+| 5 | device-management-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/device-management-service.svg?maxAge=2592000)]() | **`31 MB|10 layers`**|
 | 6 | sensor-remote-dashboard | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/sensor-remote-dashboard.svg?maxAge=2592000)]() | **`47 MB|11 layers`**|
 | 7 | citus-sensor-analytics | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`138 MB|11 layers`**|
 | 8 | citus-recognition-service | [![Pulls](https://img.shields.io/docker/pulls/cuongdd1/citus-sensor-analytics.svg?maxAge=2592000)]() | **`40 MB|7 layers`**|
@@ -37,7 +37,8 @@ Features
 
 GUI Web Portal that concentrates users, devices and applications together in one place with separated workspace for each consumer or tenant user. *This feature is still in reviewing for multi-tenant security concern using kubernetes.*
  + User Identity/User Groups/Roles Management using Auth0 (https://auth0.com) as an external service.
- + Protect device/application accesses by API Gateway using API Secret Key Authentication feature.
+ + Protect application accesses through API Gateway using API Key Authentication and RBAC.
+ + Per-device key authentication for device installation process.
 
 ---
 
@@ -52,9 +53,11 @@ Container-based application engine is designed for Microservices architecture wh
 **Manage Your Device**
 
 Device Lifecycle Management service and device security process that help you enhancing the device provisioning and communication security of the AWS IoT as well as providing Over-The-Air software update for IoT devices.
- + Device Provisioning/Activation/Management.
- + Device Software Update (OTA) with CI/CD.
-
+ + Device provisioning/activation/state management.
+ + Device's event stream to service API linker.
+ + Device accessibility mode configuration.
+ + Device Software Update (OTA).
+ 
 ---
 
 **Shared Services**
@@ -64,7 +67,7 @@ A set of featured (default) services that allow user consuming their IoT telemet
  + Sensor Analytics Service (Statistical & Anomaly Detection)
  + Plate Recognition (ANPR OpenFPT)
  + Face Detection (AWS Rekognition)
- + Gateway Management (in-progress)
+ + Gateway Management (Docker-based)
 
 ---
 
@@ -163,7 +166,7 @@ Technology
 
 **Platforms** 
  + AWS Cloud Computing Basic Services (VPC, EC2, Route53, Elastic IP, IAM, S3)
- + AWS IoT (Hub, Registry, Rule Engine, ThingShadow) 
+ + AWS IoT and BigData (Hub, Registry, Rule Engine, ThingShadow, Lambda, ML) 
  + Cassandra/DynamoDB w/Streamming
  + ElasticSearch/Logstash
  + Kong API Gateway
@@ -178,13 +181,21 @@ Technology
 **Languages** 
  
  + HTML5/CSS3
- + NodeJS 
- + AngularJS
- + D3JS
- + Nginx
+ + Javascript/D3JS 
+ + AngularJS 
+ + NodeJS
  + Python
- + Bash Shell
+ + Linux/Shell
 
+---
+
+**DevOps Tools** 
+ 
+ + Source Control (GitHub/Bitbucket)
+ + Continuous Integration (Bitbucket Pipline)
+ + Continuous Delivery (Docker Hub Repository/WebHook)
+ + Orchestration (Kubernetes/Docker Compose/AWS Cloud Formation)
+ 
 ---
 
 Deployment
