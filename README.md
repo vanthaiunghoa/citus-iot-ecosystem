@@ -10,7 +10,7 @@ CLOUD INNOVATION
 
 Description
 ===========
-Citus™ IoT Ecosystem (https://apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through Citus™ IoT Platform. It also supports to deploy on a dedicated infrastructure or a shared infrastructure.
+Citus™ IoT Ecosystem (http://v1.apps.citus.io/) is a complete IoT solution which allows consumers start to develop, integrate their IoT products, visualize sensors data in a centralized platform and rapidly building their own sharing economy business model through Citus™ IoT Platform. It also supports to deploy on a dedicated infrastructure or a shared infrastructure.
 
 ---
 
