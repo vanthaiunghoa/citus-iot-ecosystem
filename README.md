@@ -85,7 +85,7 @@ We exposed Seniot™ Gateway (Node-RED) solution with alternative versions such 
 
 **Embedded Hardware**
 
-A preconfigured Raspbian OS that simulates your Raspberry Pi hardware for Windows.
+A preconfigured Raspbian OS that simulates your Raspberry Pi hardware for Windows. (user:**pi**, password:**cloud2016**)
 + [Raspbian for Windows](https://s3-ap-northeast-1.amazonaws.com/apps.citus.io/public/qemu-raspbian.zip)
 
 ---
