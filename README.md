@@ -79,9 +79,14 @@ A set of featured applications which is used to display, monitor and control you
 **Simulation Toolbox**
 
 We exposed Seniot™ Gateway (Node-RED) solution with alternative versions such as Sensor Simulator for developers to develop/test their whole system without using a real connected hardware.
- + Latest (Original Node-RED)
+ + Seniot Gateway Latest (Original Node-RED) 
  + Sensor Simulator (Node-RED with AWS IoT)
  + Lennox Casestudy (Node-RED with Azure IoT)
+
+**Embedded Hardware**
+
+A preconfigured Raspbian OS that simulates your Raspberry Pi hardware for Windows.
++ [Raspbian for Windows](https://s3-ap-northeast-1.amazonaws.com/apps.citus.io/public/qemu-raspbian.zip)
 
 ---
 
