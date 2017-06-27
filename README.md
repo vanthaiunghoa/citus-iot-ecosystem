@@ -60,9 +60,11 @@ Device Lifecycle Management service and device security process that help you en
 **Shared Services**
 
 A set of featured (default) services that allow user consuming their IoT telemetry data into business instances such as anomaly detection, face detection or plate recognition through RESTful API.
- + Statistical Anomaly Detection (eBay Atlas)
+ + Device Management Service (Device Lifecycle and State)
+ + Sensor Analytics Service (Statistical & Anomaly Detection)
  + Plate Recognition (ANPR OpenFPT)
  + Face Detection (AWS Rekognition)
+ + Gateway Management (in-progress)
 
 ---
 
