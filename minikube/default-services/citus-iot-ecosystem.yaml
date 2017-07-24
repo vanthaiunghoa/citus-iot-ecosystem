@@ -115,7 +115,7 @@ spec:
   selector:
       matchLabels:
         app: citus-application-gateway
-        version: "2.2"
+        version: "minikube"
   strategy:
       rollingUpdate:
         maxSurge: 1
@@ -126,11 +126,11 @@ spec:
       name: citus-application-gateway
       labels:        
         app: citus-application-gateway
-        version: "2.2"    
+        version: "minikube"    
     spec:
       containers:
       - name: citus-application-gateway
-        image: cuongdd1/citus-application-gateway:kubernetes
+        image: cuongdd1/citus-application-gateway:minikube
         imagePullPolicy: IfNotPresent        
         securityContext:
           privileged: false        
