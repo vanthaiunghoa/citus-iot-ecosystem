@@ -51,6 +51,31 @@ minikube start
 git clone https://github.com/cuongquay/citus-iot-ecosystem.git
 
 cd ~/citus-iot-ecosystem/minikube
+cp ~/.minikube/apiserver.* ~/.kube/
+cp ~/.minikube/ca.crt ~/.kube/
+
+cat > ~/.kube/kubeconfig <<EOF
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: ca.crt
+    server: https://192.168.99.100:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: apiserver.crt
+    client-key: apiserver.key
+    
+EOF
 
 kubectl apply -f default-services/citus-iot-ecosystem.yaml
 sh default-services/citus-iot-ecosystem.sh
