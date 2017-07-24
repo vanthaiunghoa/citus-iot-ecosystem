@@ -4,7 +4,7 @@ OS_RELEASE=$(cat /etc/os-release)
 AMAZON_AMI="Amazon Linux AMI"
 CENTOS_AMI="CentOS Linux"
 KUBE_AWS_VERSION="v0.9.4-rc.2"
-KUBERNETES_VERSION="v1.5.0"
+KUBERNETES_VERSION="v1.6.4"
 
 if [ -z "${OS_RELEASE##*$AMAZON_AMI*}" ]; then
 	yum install docker -y
@@ -42,12 +42,16 @@ docker-compose --version
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBERNETES_VERSION}/bin/linux/amd64/kubectl
 chmod +x ./kubectl && mv ./kubectl /usr/bin/kubectl
-curl -L https://github.com/coreos/kube-aws/releases/download/${KUBE_AWS_VERSION}/kube-aws-linux-amd64.tar.gz -o /tmp/kube-aws-linux-amd64.tar.gz	
-tar -zxvf /tmp/kube-aws-linux-amd64.tar.gz
-mv linux-amd64/kube-aws /usr/bin
-rm -f /tmp/kube-aws-linux-amd64.tar.gz
-rm -rf linux-amd64/
 
-cd /usr/share/citus-iot-ecosystem/minikube
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+
+minikube start
+
+git clone https://github.com/cuongquay/citus-iot-ecosystem.git
+
+cd ~/citus-iot-ecosystem/minikube
+
+kubectl apply -f default-services/citus-iot-ecosystem.yaml
+sh default-services/citus-iot-ecosystem.sh
 
 docker-compose up -d --force-recreate
