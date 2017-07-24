@@ -17,7 +17,7 @@ services:
     ports:
      - 8020:8020
     volumes:
-    - ~/.kube:/root/.kube
+    - C:\Users\cuongdd1\.kube:/root/.kube
     restart: always
   citus-iot-ecosystem-website:
     image: cuongdd1/citus-iot-ecosystem-website:${ECOSYSTEM_RELEASE_VERSION}
@@ -36,5 +36,5 @@ services:
     ports:
      - 2880:1880
     volumes:
-    - ~/.kube:/root/.kube
+    - C:\Users\cuongdd1\.kube:/root/.kube
     restart: always  
