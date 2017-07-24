@@ -1,0 +1,40 @@
+version: '2'
+services:  
+  citus-application-proxy:
+    image: cuongdd1/citus-iot-ecosystem-website:nginx
+    depends_on:     
+     - citus-iot-ecosystem-website
+     - citus-kubernetes-tunnel
+    environment:
+     - FPT_APPLICATION_WEBSITE=http://citus-iot-ecosystem-website:1880
+     - FPT_APPLICATION_GATEWAY_PROXY=http://citus-kubernetes-tunnel:8020/api/v1/proxy/namespaces/default/services/citus-application-gateway:8000    
+    ports:
+     - 80:80
+     - 443:443
+    restart: always
+  citus-kubernetes-tunnel:
+    image: cuongdd1/citus-kubernetes-tunnel
+    ports:
+     - 8020:8020
+    volumes:
+    - ~/.kube:/root/.kube
+    restart: always
+  citus-iot-ecosystem-website:
+    image: cuongdd1/citus-iot-ecosystem-website:${ECOSYSTEM_RELEASE_VERSION}
+    depends_on:
+     - citus-kubernetes-tunnel
+    environment:
+     - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+     - AWS_IOT_CERT_BUCKET=${AWS_IOT_CERT_BUCKET}
+     - AUTH0_CLIENT_SECRET=${AUTH0_CLIENT_SECRET}
+     - FPT_APPLICATION_GATEWAY_ADMIN=http://citus-kubernetes-tunnel:8020/api/v1/proxy/namespaces/default/services/citus-application-gateway:8001
+     - FPT_APPLICATION_GATEWAY_PROXY=http://citus-kubernetes-tunnel:8020/api/v1/proxy/namespaces/default/services/citus-application-gateway:8000
+     - DEVICE_LIFECYCLE_SERVICE=${DEVICE_LIFECYCLE_SERVICE}
+     - KUBERNETES_TUNNEL_SERVICE=http://citus-kubernetes-tunnel:8020/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
+    ports:
+     - 2880:1880
+    volumes:
+    - ~/.kube:/root/.kube
+    restart: always  
