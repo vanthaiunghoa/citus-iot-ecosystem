@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e -x
+
 OS_RELEASE=$(cat /etc/os-release)
 AMAZON_AMI="Amazon Linux AMI"
 CENTOS_AMI="CentOS Linux"
