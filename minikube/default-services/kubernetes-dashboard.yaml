@@ -7,8 +7,7 @@ kind: ReplicationController
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"  
-  labels:
-    addonmanager.kubernetes.io/mode: Reconcile
+  labels:    
     kubernetes.io/minikube-addons: dashboard
     version: v1.5.0
   name: kubernetes-dashboard
@@ -16,14 +15,12 @@ metadata:
 spec:
   replicas: 1
   selector:
-    addonmanager.kubernetes.io/mode: Reconcile
     app: kubernetes-dashboard
     version: v1.5.0
   template:
     metadata:
       creationTimestamp: null
       labels:
-        addonmanager.kubernetes.io/mode: Reconcile
         app: kubernetes-dashboard
         version: v1.5.0
     spec:
