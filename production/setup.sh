@@ -60,5 +60,5 @@ kube-aws init \
 kube-aws render && kube-aws validate --s3-uri s3://apps.citus.io/stacks
 kube-aws up --s3-uri s3://apps.citus.io/stacks
 
-cd /usr/share/citus-iot-ecosystem/
+cd /usr/share/citus-iot-ecosystem/production
 docker-compose up -d --force-recreate
