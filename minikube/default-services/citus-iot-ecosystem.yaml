@@ -162,10 +162,12 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
+    nodePort: 32000
   - name: tcp-8001-8001-admin
     port: 8001
     protocol: TCP
     targetPort: 8001
+    nodePort: 32001
   selector:
     app: citus-application-gateway
   type: NodePort
