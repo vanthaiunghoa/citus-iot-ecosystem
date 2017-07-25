@@ -14,3 +14,6 @@ export ELASTIC_SEARCH_SERVICE=http://citus-elasticsearch-svc.default.svc.cluster
 export DEVICE_LIFECYCLE_SERVICE=http://192.168.99.100/apisrv/device-management-service
 export AUTH0_CLIENT_SECRET=
 export OPENFPT_API_KEY=
+
+export CITUS_CASSANDRA_REST=http://192.168.99.100:8020/api/v1/proxy/namespaces/default/services/citus-cassandra-rest:80
+export CITUS_APPLICATION_GATEWAY=http://192.168.99.100:8020/api/v1/proxy/namespaces/default/services/citus-application-gateway:8001
