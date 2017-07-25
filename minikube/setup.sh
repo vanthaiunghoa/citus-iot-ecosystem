@@ -42,7 +42,8 @@ users:
     client-key: apiserver.key
     
 EOF
-
+cp ~/.kube/kubeconfig ~/.kube/config
+kubectl delete replicationcontroller kubernetes-dashboard --namespace=kube-system
 kubectl apply -f default-services/kubernetes-dashboard.yaml
 kubectl apply -f default-services/citus-iot-ecosystem.yaml
 sh default-services/citus-iot-ecosystem.sh
