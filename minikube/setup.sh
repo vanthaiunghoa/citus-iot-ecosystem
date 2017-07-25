@@ -1,22 +1,22 @@
 #!/bin/bash
-
-OS_RELEASE=$(cat /etc/os-release)
 KUBERNETES_VERSION="v1.6.4"
-
-curl -LO "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-
-curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBERNETES_VERSION}/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin/ 
-sudo ln -s /usr/local/bin/kubectl /usr/bin/kubectl
-
-curl -LO minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
-sudo ln -s /usr/local/bin/minikube /usr/bin/minikube
+if [ -f /usr/bin/sw_vers ]; then
+	echo "INFO: Installing Developer Tools for Mac OSX."
+	brew install git python curl
+	pip install requests
+	curl -LO "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
+	sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+	
+	curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBERNETES_VERSION}/bin/linux/amd64/kubectl && chmod +x kubectl && mv kubectl /usr/local/bin/ 
+	sudo ln -s /usr/local/bin/kubectl /usr/bin/kubectl
+	
+	curl -LO minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+	sudo ln -s /usr/local/bin/minikube /usr/bin/minikube
+else
+	echo "INFO: Installing Developer Tools for Windows."
+fi
 
 minikube start --memory=5120
-
-git clone https://github.com/cuongquay/citus-iot-ecosystem.git
-
-cd ~/citus-iot-ecosystem/minikube
 cp ~/.minikube/apiserver.* ~/.kube/
 cp ~/.minikube/ca.crt ~/.kube/
 
@@ -43,11 +43,11 @@ users:
     
 EOF
 cp ~/.kube/kubeconfig ~/.kube/config
-kubectl delete replicationcontroller kubernetes-dashboard --namespace=kube-system
+
 kubectl apply -f default-services/kubernetes-dashboard.yaml
 kubectl apply -f default-services/citus-iot-ecosystem.yaml
-sh default-services/citus-iot-ecosystem.sh
-sh default-services/citus-cassandra-database.sh
+#sh default-services/citus-iot-ecosystem.sh
+#sh default-services/citus-cassandra-database.sh
 
-eval $(minikube docker-env)
-docker-compose up -d --force-recreate
+#eval $(minikube docker-env)
+#docker-compose up -d --force-recreate
