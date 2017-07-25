@@ -79,5 +79,5 @@ EOF
 
 kubectl apply -f default-services/citus-iot-ecosystem.yaml
 sh default-services/citus-iot-ecosystem.sh
-
+eval $(minikube docker-env)
 docker-compose up -d --force-recreate

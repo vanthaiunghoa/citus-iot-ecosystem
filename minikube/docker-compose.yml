@@ -1,6 +1,6 @@
 version: '2'
 services:  
-  citus-application-proxy:
+  citus-application-router:
     image: cuongdd1/citus-iot-ecosystem-website:nginx
     depends_on:     
      - citus-iot-ecosystem-website

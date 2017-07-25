@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 mkdir -p ~/tmp/ 
 cat > ~/tmp/citus-iot-ecosystem.yaml <<EOF
 apiVersion: extensions/v1beta1
