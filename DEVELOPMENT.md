@@ -54,6 +54,21 @@ $http({
 });
 ```
 
+Better Use For Single Webpage Application
+-----------------------------------------
+**Frontend Technologies:**
++ Javascript
++ AngularJS
++ VueJS
++ React
+
+**Backend Technologies:**
++ NodeJS
++ Java
++ Python
++ Groovy
++ Others
+
 Absolute URL in your HTML code:
 ===============================
 By set **Export BASE_URL= as OS environment variable (Web Only)** to **TRUE** when registering your application image on the *Application Registration* feature.
@@ -113,4 +128,14 @@ if os.environ.get('BASE_URL') is not None:
     app.route = initRouteWithPrefix(app.route, os.environ['BASE_URL'])
 ```
 
-Other language having other workaround solution
+Better Use For Multipe Webpage Application
+-----------------------------------------
+**Frontend Technologies:**
++ Server rendering to HTML/CSS/Javascript using View Engine
+
+**Backend Technologies:**
++ NodeJS
++ Java
++ Python
++ Groovy
++ Others
