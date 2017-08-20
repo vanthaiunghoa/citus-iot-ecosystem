@@ -62,7 +62,7 @@ By set **Export BASE_URL= as OS environment variable (Web Only)** to **TRUE** wh
 How it works!
 ------------
 
-1. Web Browser: GET /apisrv/$BASE_URL/foo 
+1. Web Browser: GET /apisrv/$BASE_URL/bar 
 2. Application Gateway: GET /apisrv/$BASE_URL/bar 
 3. Your Application: GET /apisrv/$BASE_URL/bar 
 
