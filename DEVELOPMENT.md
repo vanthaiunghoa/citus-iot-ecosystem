@@ -2,7 +2,7 @@ When developing your web application, the Citus™ IoT Platform requires it foll
 
 Relative URL in your HTML code:
 ===============================
-By set **Export BASE_URL= as OS environment variable (Web Only)** to **FALSE** (default)
+By set **Export BASE_URL= as OS environment variable (Web Only)** to **FALSE** (default) when registering your application image on the *Application Registration* feature.
 
 How it works!
 ------------
@@ -56,7 +56,7 @@ $http({
 
 Absolute URL in your HTML code:
 ===============================
-By set **Export BASE_URL= as OS environment variable (Web Only)** to **TRUE**
+By set **Export BASE_URL= as OS environment variable (Web Only)** to **TRUE** when registering your application image on the *Application Registration* feature.
 
 
 How it works!
