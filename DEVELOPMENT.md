@@ -69,4 +69,48 @@ How it works!
 Compatible Solution:
 -------------------
 
+1. Your links in HTML code must refer to a relative URL path and <base> URL must be blank
 
+Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/
+
+```
+  <base href="/apisrv/your-app-name~your-owner-id/" target="_blank">
+  <meta charset="UTF-8">
+  <title>CLOUD INNOVATION®</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href='css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='css/print.css' media='print' rel='stylesheet' type='text/css'/>
+```
+2. Your backend web service neet to route all the request with $BASE_URL prefix
+
+Example in Python:
+
+```
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
+```
+
+You need to fix the prefix base by using this code:
+
+```
+def initRouteWithPrefix(route_function, prefix='', mask='{0}{1}'):
+  '''
+    Defines a new route function with a prefix.
+    The mask argument is a `format string` formatted with, in that order:
+      prefix, route
+  '''
+  def newroute(route, *args, **kwargs):
+    '''New function to prefix the route'''
+    return route_function(mask.format(prefix, route), *args, **kwargs)
+  return newroute
+  
+if os.environ.get('BASE_URL') is not None:
+    app.route = initRouteWithPrefix(app.route, os.environ['BASE_URL'])
+```
+
+Other language having other workaround solution
