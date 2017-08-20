@@ -11,8 +11,8 @@ How it works!
 2. Application Gateway: GET /foo 
 3. Your Application: GET /foo 
 
-Compatible Code:
-----------------
+Compatible Solution:
+-------------------
 
 1. Your links in HTML code must refer to a relative URL path and <base> URL must be blank
 
@@ -43,15 +43,15 @@ wsClient = new WebSocket(wsPrefix + wsUri + "/ws/sensors");
 For AngularJS code:
 ```
 $http({
-			method : 'POST',
-			url : window.location.pathname + '/image/remove',
-			data : {},
-			headers : {
-				'Authorization' : "Bearer " + localStorage.getItem("id_token")
-			}
-		}).then(function(result) {
-		}, function(error) {
-		});
+	method : 'POST',
+	url : window.location.pathname + '/image/remove',
+	data : {},
+	headers : {
+		'Authorization' : "Bearer " + localStorage.getItem("id_token")
+	}
+}).then(function(result) {
+	}, function(error) {
+});
 ```
 
 Absolute URL in your HTML code:
@@ -65,3 +65,8 @@ How it works!
 1. Web Browser: GET /apisrv/$BASE_URL/foo 
 2. Application Gateway: GET /apisrv/$BASE_URL/bar 
 3. Your Application: GET /apisrv/$BASE_URL/bar 
+
+Compatible Solution:
+-------------------
+
+
