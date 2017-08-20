@@ -77,13 +77,13 @@ Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/
   <base href="/apisrv/your-app-name~your-owner-id/" target="_blank">
   <meta charset="UTF-8">
   <title>CLOUD INNOVATION®</title>
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-  <link href='css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='css/reset.css' media='print' rel='stylesheet' type='text/css'/>
-  <link href='css/print.css' media='print' rel='stylesheet' type='text/css'/>
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+  <link href='/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='/css/print.css' media='print' rel='stylesheet' type='text/css'/>
 ```
 2. Your backend web service neet to route all the request with $BASE_URL prefix
 
