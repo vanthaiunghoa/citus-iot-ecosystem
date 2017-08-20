@@ -84,7 +84,7 @@ How it works!
 Compatible Solution:
 -------------------
 
-1. Your links in HTML code must refer to a relative URL path and <base> URL must be blank
+1. Your links in HTML code must refer to an absulute URL path and <base> URL must be set to $BASE_URL that passed by the Platform into ENVIRONMENT VARIABLES
 
 Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/
 
