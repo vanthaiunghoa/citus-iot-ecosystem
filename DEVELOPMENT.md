@@ -8,7 +8,7 @@ How it works!
 ------------
 
 1. Web Browser: GET /apisrv/$BASE_URL/foo 
-2. Application Gateway: GET /foo 
+2. Application Gateway: GET /apisrv/$BASE_URL/foo 
 3. Your Application: GET /foo 
 
 Compatible Solution:
