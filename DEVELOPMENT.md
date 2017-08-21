@@ -117,7 +117,7 @@ Webpage with absolute links built by using server side scripting languages
   <link href='/apisrv/your-app-name~your-owner-id/css/print.css' media='print' rel='stylesheet' type='text/css'/>
 ```
 
-2. Your backend web service neet to route all the request with $BASE_URL prefix
+2. Your backend web service needs to route all the requests with $BASE_URL prefix
 
 Example in Python:
 
