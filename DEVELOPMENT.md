@@ -88,7 +88,7 @@ Compatible Solution:
 
 Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/ 
 
-Webpage with absolute links
+Webpage with <base> is set and links are relative
 
 ```
   <meta charset="UTF-8">
@@ -103,8 +103,7 @@ Webpage with absolute links
   <link href='css/print.css' media='print' rel='stylesheet' type='text/css'/>
 ```
 
-
-Webpage with <base> is set and links are relative
+Webpage with absolute links built by using server side scripting languages
 
 ```
   <meta charset="UTF-8">
