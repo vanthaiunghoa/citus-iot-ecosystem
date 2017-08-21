@@ -89,16 +89,15 @@ Compatible Solution:
 Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/
 
 ```
-  <base href="/apisrv/your-app-name~your-owner-id/" target="_blank">
   <meta charset="UTF-8">
   <title>CLOUD INNOVATION®</title>
-  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
-  <link href='/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='/css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
-  <link href='/css/print.css' media='print' rel='stylesheet' type='text/css'/>
+  <link rel="icon" type="image/png" href="/apisrv/your-app-name~your-owner-id/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/apisrv/your-app-name~your-owner-id/images/favicon-16x16.png" sizes="16x16" />
+  <link href='/apisrv/your-app-name~your-owner-id/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/apisrv/your-app-name~your-owner-id/css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/apisrv/your-app-name~your-owner-id/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='/apisrv/your-app-name~your-owner-id/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='/apisrv/your-app-name~your-owner-id/css/print.css' media='print' rel='stylesheet' type='text/css'/>
 ```
 2. Your backend web service neet to route all the request with $BASE_URL prefix
 
@@ -123,9 +122,12 @@ def initRouteWithPrefix(route_function, prefix='', mask='{0}{1}'):
     '''New function to prefix the route'''
     return route_function(mask.format(prefix, route), *args, **kwargs)
   return newroute
-  
+
 if os.environ.get('BASE_URL') is not None:
+    app = Flask(__name__, static_url_path = os.environ['BASE_URL'])
     app.route = initRouteWithPrefix(app.route, os.environ['BASE_URL'])
+else:
+    app = Flask(__name__, static_url_path = "")
 ```
 
 Better Use For Multipe Webpage Application
