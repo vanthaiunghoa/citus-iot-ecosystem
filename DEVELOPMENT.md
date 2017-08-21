@@ -54,7 +54,7 @@ $http({
 });
 ```
 
-Better Use For Single Webpage Application
+Better Use For Single Page Application
 -----------------------------------------
 **Frontend Technologies:**
 + Javascript
@@ -148,7 +148,7 @@ else:
     app = Flask(__name__, static_url_path = "")
 ```
 
-Better Use For Multipe Webpage Application
+Better Use For Multipe Pages Application
 -----------------------------------------
 **Frontend Technologies:**
 + Server rendering to HTML/CSS/Javascript using View Engine
