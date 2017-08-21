@@ -84,9 +84,27 @@ How it works!
 Compatible Solution:
 -------------------
 
-1. Your links in HTML code must refer to an absulute URL path and <base> URL must be set to $BASE_URL that passed by the Platform into ENVIRONMENT VARIABLES
+1. Your links in HTML code must refer to an absulute URL path and <base> URL must be set to $BASE_URL that passed by the Platform into ENVIRONMENT VARIABLES or every link must be added with $BASE_URL as prefix
 
-Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/
+Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/ 
+
+Webpage with absolute links
+
+```
+  <meta charset="UTF-8">
+  <base href="/apisrv/your-app-name~your-owner-id/" target="_blank">
+  <title>CLOUD INNOVATION®</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link href='css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='css/print.css' media='print' rel='stylesheet' type='text/css'/>
+```
+
+
+Webpage with <base> is set and links are relative
 
 ```
   <meta charset="UTF-8">
@@ -99,6 +117,7 @@ Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/
   <link href='/apisrv/your-app-name~your-owner-id/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
   <link href='/apisrv/your-app-name~your-owner-id/css/print.css' media='print' rel='stylesheet' type='text/css'/>
 ```
+
 2. Your backend web service neet to route all the request with $BASE_URL prefix
 
 Example in Python:
