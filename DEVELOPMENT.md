@@ -7,8 +7,8 @@ By set **Export BASE_URL= as OS environment variable (Web Only)** to **FALSE** (
 How it works!
 ------------
 
-1. Web Browser: GET /apisrv/$BASE_URL/foo 
-2. Application Gateway: GET /apisrv/$BASE_URL/foo 
+1. Web Browser: GET $BASE_URL/foo 
+2. Application Gateway: GET $BASE_URL/foo 
 3. Your Application: GET /foo 
 
 Compatible Solution:
@@ -77,16 +77,16 @@ By set **Export BASE_URL= as OS environment variable (Web Only)** to **TRUE** wh
 How it works!
 ------------
 
-1. Web Browser: GET /apisrv/$BASE_URL/bar 
-2. Application Gateway: GET /apisrv/$BASE_URL/bar 
-3. Your Application: GET /apisrv/$BASE_URL/bar 
+1. Web Browser: GET $BASE_URL/bar 
+2. Application Gateway: GET $BASE_URL/bar 
+3. Your Application: GET $BASE_URL/bar 
 
 Compatible Solution:
 -------------------
 
 1. Your links in HTML code must refer to an absulute URL path and <base> URL must be set to $BASE_URL that passed by the Platform into ENVIRONMENT VARIABLES or every link must be added with $BASE_URL as prefix
 
-Assume that BASE_URL=/apisrv/your-app-name~your-owner-id/ 
+Assume that BASE_URL=/apisrv/your-app-name~your-owner-id
 
 Webpage with <base> is set and links are relative
 
